@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"E:/Code/University Submarine Team Website \\(5\\)\" -type f -name \"*.json\" -o -name \"*.js\" -o -name \"*.ts\" -o -name \"*.tsx\" -o -name \".env*\")",
+      "Bash(ls:*)",
+      "Bash(find \"E:/Code/University Submarine Team Website \\(5\\)/src\" -type f \\\\\\( -name \"*.ts\" -o -name \"*.tsx\" -o -name \"*.js\" -o -name \"*.jsx\" \\\\\\))",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(npm run:*)",
+      "Bash(grep -E \"\"\"react\"\":|\"\"react-dom\"\":\" package.json)",
+      "Bash(npm list:*)",
+      "Bash(head:*)"
+    ]
+  }
+}
