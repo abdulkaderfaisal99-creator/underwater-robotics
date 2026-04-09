@@ -15,8 +15,8 @@ const ContactUs = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      value: 'team@robosub.university.edu',
-      link: 'mailto:team@robosub.university.edu',
+      value: 'admin@teamblackpearl.com',
+      link: 'mailto:admin@teamblackpearl.com',
     },
     {
       icon: <Phone className="w-6 h-6" />,
@@ -225,8 +225,8 @@ const ContactUs = () => {
                 </p>
               </div>
 
-              {/* Additional Info */}
-              <div className="bg-white p-8 rounded-2xl border-2 border-blue-200 shadow-2xl">
+              {/* Contact hours */}
+              {/* <div className="bg-white p-8 rounded-2xl border-2 border-blue-200 shadow-2xl">
                 <h3 className="text-2xl text-gray-900 mb-4 font-bold">Office Hours</h3>
                 <div className="space-y-3 text-gray-700">
                   <div className="flex justify-between">
@@ -242,7 +242,7 @@ const ContactUs = () => {
                     <span className="text-red-600 font-semibold">Closed</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
 
