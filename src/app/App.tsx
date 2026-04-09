@@ -39,9 +39,9 @@ export default function App() {
               path="/robosub-2026"
               element={<RoboSub2026 />}
             />
-            <Route path="/wfsa-2023" element={<WFSA2023 />} />
+            <Route path="/wfsa-2026" element={<WFSA2023 />} />
             <Route
-              path="/wfsa-2023-team"
+              path="/wfsa-2026-team"
               element={<WFSA2023Team />}
             />
             <Route path="/wfsa-2024" element={<WFSA2024 />} />

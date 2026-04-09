@@ -125,7 +125,7 @@ const Navbar = () => {
                       WFSA 2025
                     </Link>
                     <Link
-                      to="/wfsa-2023"
+                      to="/wfsa-2026"
                       className="block px-4 py-3 text-white hover:bg-red-600 transition-colors"
                     >
                       WFSA 2026

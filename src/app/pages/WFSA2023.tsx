@@ -372,7 +372,7 @@ const WFSA2023 = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
             >
-              <Link to="/wfsa-2023-team">
+              <Link to="/wfsa-2026-team">
                 <motion.button
                   whileHover={{
                     scale: 1.05,
