@@ -65,7 +65,7 @@ const Home = () => {
       caption: "World Ferry Safety Association 2026",
       description:
         "Experience our groundbreaking debut at the World Ferry Safety Association 2026. This historic competition marked our first international appearance, where we showcased innovative ferry design concepts and maritime engineering solutions. Witness the beginning of our journey in sustainable marine transportation and the foundation that shaped our team's future endeavors.",
-      link: "/wfsa-2023",
+      link: "/wfsa-2026",
     },
     {
       url: wfsa2024Image,
