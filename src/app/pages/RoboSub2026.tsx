@@ -30,7 +30,7 @@ const RoboSub2026 = () => {
   return (
     <div className="min-h-screen -mt-20">
       {/* Hero Section with Solid Black Background */}
-      <section className="relative h-[80vh] overflow-hidden bg-[#091b4c]">
+      <section className="relative h-[80vh] overflow-hidden bg-[#0e318f]">
         {/* RoboSub Logo and Text Overlay - Centered */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 text-center w-full px-4">
           <motion.img

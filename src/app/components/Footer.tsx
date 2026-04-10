@@ -56,7 +56,7 @@ const Footer = ({ marqueeBackground }: { marqueeBackground?: string } = {}) => {
                 </p>
                 <div className="flex justify-center space-x-4">
                   <motion.a
-                    href="https://www.facebook.com/people/Team-Black-Pearl/61572429644764/"
+                    href="https://www.facebook.com/profile.php?id=61572429644764"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{
@@ -84,7 +84,7 @@ const Footer = ({ marqueeBackground }: { marqueeBackground?: string } = {}) => {
                     <Twitter className="w-8 h-8" />
                   </motion.a>
                   <motion.a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/teamblackpearl2026/"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{
@@ -98,7 +98,7 @@ const Footer = ({ marqueeBackground }: { marqueeBackground?: string } = {}) => {
                     <Instagram className="w-8 h-8" />
                   </motion.a>
                   <motion.a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/company/112686058/admin/dashboard/"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{
@@ -112,7 +112,7 @@ const Footer = ({ marqueeBackground }: { marqueeBackground?: string } = {}) => {
                     <Linkedin className="w-8 h-8" />
                   </motion.a>
                   <motion.a
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/@TeamBlackPearl-u5b"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{

@@ -21,8 +21,8 @@ const ContactUs = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      value: '+8801743-657203',
+      link: 'tel:+8801743-657203',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -33,16 +33,16 @@ const ContactUs = () => {
   ];
 
   const socialLinks = [
-    { icon: <Facebook className="w-6 h-6" />, label: 'Facebook', url: 'https://facebook.com' },
-    { icon: <Linkedin className="w-6 h-6" />, label: 'LinkedIn', url: 'https://linkedin.com' },
+    { icon: <Facebook className="w-6 h-6" />, label: 'Facebook', url: 'https://www.facebook.com/profile.php?id=61572429644764' },
+    { icon: <Linkedin className="w-6 h-6" />, label: 'LinkedIn', url: 'https://www.linkedin.com/company/112686058/admin/dashboard/' },
     { icon: <Twitter className="w-6 h-6" />, label: 'Twitter', url: 'https://twitter.com' },
-    { icon: <Instagram className="w-6 h-6" />, label: 'Instagram', url: 'https://instagram.com' },
+    { icon: <Instagram className="w-6 h-6" />, label: 'Instagram', url: 'https://www.instagram.com/teamblackpearl2026/' },
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-blue-50 to-blue-100 -mt-20">
       {/* Hero Section */}
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden mb-0">
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden mb-0">
         <div className="absolute inset-0">
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200"

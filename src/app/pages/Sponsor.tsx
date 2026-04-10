@@ -35,7 +35,7 @@ const Sponsor = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto"
           >
-            Help us push the boundaries of underwater robotics
+            Help us Push The Boundaries of Underwater Robotics
           </motion.p>
         </div>
 

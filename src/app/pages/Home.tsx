@@ -123,11 +123,11 @@ const Home = () => {
   };
 
   return (
-    <div className="relative -mt-20">
+    <div className="relative -mt-40">
       {/* Hero Section with Video Background */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden mt-[80px]">
         {/* YouTube Video Background */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 ">
           {/* Gradient overlays for white/gray/red mix */}
           <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-gray-200/30 to-red-500/30 z-10" />
           <div className="absolute inset-0 bg-gradient-to-t from-white/50 via-transparent to-gray-100/20 z-10" />

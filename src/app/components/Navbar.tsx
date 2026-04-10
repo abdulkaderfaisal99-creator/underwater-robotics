@@ -23,7 +23,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="sticky top-0 z-50 bg-gradient-to-r from-[#BD0C0D] via-red-700 to-[#BD0C0D] backdrop-blur-sm border-b border-white/20 shadow-lg shadow-red-900/30"
+      className="sticky top-0 z-50 bg-gradient-to-r from-[#8f0708] via-red-800 to-[#8f0708] backdrop-blur-sm border-b border-white/20 shadow-lg shadow-red-900/30"
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
@@ -49,18 +49,7 @@ const Navbar = () => {
             <NavLink to="/">Home</NavLink>
 
             {/* About Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setIsAboutDropdownOpen(true)}
-              onMouseLeave={() => setIsAboutDropdownOpen(false)}
-            >
-              <Link
-                to="/papers"
-                className="flex items-center space-x-1 text-white hover:text-blue-100 transition-colors px-3 py-2 font-semibold"
-              >
-                <span>Papers</span>
-              </Link>
-            </div>
+            <NavLink to="/papers">Papers</NavLink>
 
             <NavLink to="/about">About Us</NavLink>
             <NavLink to="/sponsor">Sponsor</NavLink>
@@ -144,8 +133,8 @@ const Navbar = () => {
               <AnimatePresence>
                 {isSearchOpen && (
                   <motion.input
-                    initial={{ width: 0, opacity: 0 }}
-                    animate={{ width: 250, opacity: 1 }}
+                    initial={{ width: 0, opacity: 0, translate: "0 0" }}
+                    animate={{ width: 250, opacity: 1, translate: "0 100%" }}
                     exit={{ width: 0, opacity: 0 }}
                     type="text"
                     placeholder="Search..."

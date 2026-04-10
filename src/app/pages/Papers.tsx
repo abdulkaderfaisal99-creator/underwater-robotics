@@ -140,8 +140,8 @@ const Papers = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 -mt-20">
       {/* Hero Section */}
-      <section className="relative py-60 bg-[#1C398E]">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative h-[80vh] flex items-center justify-center bg-[#1C398E]">
+        <div className="relative px-4 text-center">
           <motion.div
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

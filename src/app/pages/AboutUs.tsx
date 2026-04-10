@@ -7,7 +7,7 @@ import Gallery from "../components/Gallery";
 import teamPhoto from "../../assets/4e2900d28fd2aad54a10ae7ebc3c636b1541933a.png";
 import wfsa2024Image from "../../assets/eff451377b7f7d289ff70934cd7e97e5ade6807f.png";
 import wfsa2025Image from "../../assets/6c633fc660dadec2ff14a15b07465f89d9217248.png";
-import wfsa2026Image from "../../assets/21f2756d1a1801620ce417b4c8ea913032faa951.png";
+import wfsa2026Image from "../../assets/Screenshot 2026-04-10 235144.png";
 
 const AboutUs = () => {
   const milestones = [
