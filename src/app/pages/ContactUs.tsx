@@ -35,7 +35,7 @@ const ContactUs = () => {
   const socialLinks = [
     { icon: <Facebook className="w-6 h-6" />, label: 'Facebook', url: 'https://www.facebook.com/profile.php?id=61572429644764' },
     { icon: <Linkedin className="w-6 h-6" />, label: 'LinkedIn', url: 'https://www.linkedin.com/company/112686058/admin/dashboard/' },
-    { icon: <Twitter className="w-6 h-6" />, label: 'Twitter', url: 'https://twitter.com' },
+    // { icon: <Twitter className="w-6 h-6" />, label: 'Twitter', url: 'https://twitter.com' },
     { icon: <Instagram className="w-6 h-6" />, label: 'Instagram', url: 'https://www.instagram.com/teamblackpearl2026/' },
   ];
 
@@ -204,7 +204,7 @@ const ContactUs = () => {
               {/* Social Media */}
               <div className="bg-white p-8 rounded-2xl border-2 border-blue-200 shadow-2xl">
                 <h3 className="text-2xl text-gray-900 mb-6 font-bold">Follow Us</h3>
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid grid-cols-4 gap-4 ">
                   {socialLinks.map((social, index) => (
                     <motion.a
                       key={index}

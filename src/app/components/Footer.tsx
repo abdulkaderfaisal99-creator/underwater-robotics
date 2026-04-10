@@ -69,7 +69,7 @@ const Footer = ({ marqueeBackground }: { marqueeBackground?: string } = {}) => {
                   >
                     <Facebook className="w-8 h-8" />
                   </motion.a>
-                  <motion.a
+                  {/* <motion.a
                     href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -82,7 +82,7 @@ const Footer = ({ marqueeBackground }: { marqueeBackground?: string } = {}) => {
                     className="text-gray-400 hover:text-blue-400 transition-colors bg-gray-800 p-3 rounded-full hover:bg-blue-400/20"
                   >
                     <Twitter className="w-8 h-8" />
-                  </motion.a>
+                  </motion.a> */}
                   <motion.a
                     href="https://www.instagram.com/teamblackpearl2026/"
                     target="_blank"
@@ -125,7 +125,7 @@ const Footer = ({ marqueeBackground }: { marqueeBackground?: string } = {}) => {
                   >
                     <Youtube className="w-8 h-8" />
                   </motion.a>
-                  <motion.a
+                  {/* <motion.a
                     href="https://github.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -138,7 +138,7 @@ const Footer = ({ marqueeBackground }: { marqueeBackground?: string } = {}) => {
                     className="text-gray-400 hover:text-white transition-colors bg-gray-800 p-3 rounded-full hover:bg-white/20"
                   >
                     <Github className="w-8 h-8" />
-                  </motion.a>
+                  </motion.a> */}
                 </div>
               </div>
             </motion.div>

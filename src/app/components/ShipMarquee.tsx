@@ -26,7 +26,7 @@ const ShipMarquee = ({
       <div className="relative flex">
         {/* First set of ships */}
         <div className="flex animate-marquee whitespace-nowrap items-center">
-          {emojis.map((emoji, index) => (
+          {emojis.map((emoji, index) => ( <>
             <div key={`item-1-${index}`} className="flex items-center">
               <span
                 className="mx-12 text-6xl opacity-80"
@@ -34,15 +34,18 @@ const ShipMarquee = ({
               >
                 {emoji}
               </span>
+              </div>
+
               {/* Add submarine icon after every 3rd emoji */}
-              {(index + 1) % 3 === 0 && (
+
+              {(index + 1) % 3 === 0 && ( 
                 <img
                   src={submarineIcon}
                   alt="Submarine"
                   className="mx-12 w-16 h-16 opacity-80"
                 />
               )}
-            </div>
+            </>
           ))}
         </div>
 
