@@ -1,5 +1,5 @@
 
-  # University Submarine Team Website
+  # Team Black Pearl Website
 
   This is a code bundle for University Submarine Team Website. The original project is available at https://www.figma.com/design/9hcpT4S9csSk40Twn5s74t/University-Submarine-Team-Website.
 
