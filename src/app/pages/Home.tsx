@@ -135,7 +135,7 @@ const Home = () => {
           {/* YouTube Video Embed */}
           <iframe
             className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-            src="https://www.youtube.com/embed/tv9Q4y0d76w?autoplay=1&mute=1&loop=1&playlist=tv9Q4y0d76w&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+            src="https://www.youtube.com/embed/Lw0MAfOyMsE?autoplay=1&mute=1&loop=1&playlist=Lw0MAfOyMsE&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
             title="Background Video"
             frameBorder="0"
             allow="autoplay; encrypted-media"
