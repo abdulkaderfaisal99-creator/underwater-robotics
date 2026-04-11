@@ -192,7 +192,7 @@ const Navbar = () => {
                 </MobileNavLink>
 
                 {/* Mobile About Dropdown */}
-                <div className="pl-4">
+                {/* <div className="pl-4">
                   <p className="text-sm text-gray-400 mb-2">Research Papers</p>
                   {papers.map((paper) => (
                     <a
@@ -205,7 +205,14 @@ const Navbar = () => {
                       {paper.year} - {paper.title}
                     </a>
                   ))}
-                </div>
+                </div> */}
+
+                <MobileNavLink
+                  to="/papers"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Papers
+                </MobileNavLink>
 
                 <MobileNavLink
                   to="/sponsor"
