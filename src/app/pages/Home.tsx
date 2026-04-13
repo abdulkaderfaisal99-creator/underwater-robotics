@@ -230,7 +230,7 @@ const Home = () => {
                   className="bg-gradient-to-r from-[#BD0C0D] to-red-700 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg block w-2/5 text-center transition-all duration-300"
                   style={{ fontFamily: "'Sequel Sans', sans-serif" }}
                 >
-                  Dive in
+                  Explore
                 </motion.a>
               </motion.div>
             </div>
