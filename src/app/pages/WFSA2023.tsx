@@ -14,16 +14,81 @@ import {
 import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import Footer from "../components/Footer";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 // Import ferry image
 import ferryImage from "../../assets/39946ede35e7b955699dae5799d3d3abbbd3c45c.png";
 import teamPhoto from "../../assets/fb175d9f4423ee7dca7eda6d4534e340113a400d.png";
 import principalParticularsImg from "../../assets/5b59b0cd2f43aa25b4d9b3c57e70eaa401869950.png";
 
+const data = [
+  {
+    title: "Team Black Pearl Secures Third Place at WFSA 2026",
+    source: "BUET Official Website",
+    description:
+      "BUET students excel in international ferry design competition with innovative CNG-powered solution for Niger River transport.",
+    link: "https://www.buet.ac.bd",
+    image:
+      "https://images.unsplash.com/photo-1619425192533-4ae6ae039af4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHN0dWRlbnRzJTIwdGVhbSUyMHN1Y2Nlc3MlMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzQ1NDcwNjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+  {
+    title: "BUET Team Shines in World Ferry Safety Competition",
+    source: "The Daily Star",
+    description:
+      "Bangladeshi engineering students design sustainable passenger ferry for Niger River route with CNG-Electric hybrid system.",
+    link: "https://www.thedailystar.net",
+    image:
+      "https://images.unsplash.com/photo-1771699435062-3072daa0418f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXdzcGFwZXIlMjBqb3VybmFsaXNtJTIwQmFuZ2xhZGVzaCUyMG1lZGlhfGVufDF8fHx8MTc3NDU0NzA2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+  {
+    title:
+      "বুয়েটের শিক্ষার্থীদের ফেরি ডিজাইনে আন্তর্জাতিক স্বীকৃতি",
+    source: "Prothom Alo",
+    description:
+      "টিম ব্ল্যাক পার্ল বিশ্ব ফেরি নিরাপত্তা প্রতিযোগিতায় তৃতীয় স্থান অর্জন করেছে সিএনজি চালিত যাত্রীবাহী ফেরির নকশার মাধ্যমে।",
+    link: "https://www.prothomalo.com",
+    image:
+      "https://images.unsplash.com/photo-1632679090212-612ac1f4d76f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcm5hdGlvbmFsJTIwY29tcGV0aXRpb24lMjBhd2FyZCUyMHdpbm5pbmd8ZW58MXx8fHwxNzc0NTQ3MDY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+  {
+    title:
+      "Celebrating Team Black Pearl's Achievement at WFSA 2026",
+    source: "BUET Facebook Official",
+    description:
+      "Official announcement and congratulations from BUET administration for WFSA 2026 third place achievement with innovative ferry design.",
+    link: "https://www.facebook.com/buet1912",
+    image:
+      "https://images.unsplash.com/photo-1571927098989-32b9f3c26181?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCVUVUJTIwdW5pdmVyc2l0eSUyMGNhbXB1cyUyMGJ1aWxkaW5nfGVufDF8fHx8MTc3NDU0NzA2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+  {
+    title: "বুয়েট শিক্ষার্থীদের ফেরি ডিজাইনে বৈশ্বিক সাফল্য",
+    source: "Bangladesh Pratidin",
+    description:
+      "নাইজার নদীর জন্য পরিবেশবান্ধব সিএনজি-ইলেকট্রিক হাইব্রিড চালিত যাত্রীবাহী ফেরির উদ্ভাবনী নকশা।",
+    link: "https://www.bd-pratidin.com",
+    image:
+      "https://images.unsplash.com/photo-1582638810035-acbf125821bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmZXJyeSUyMGJvYXQlMjBzdXN0YWluYWJsZSUyMHRyYW5zcG9ydCUyMGlubm92YXRpb258ZW58MXx8fHwxNzc0NTQ3MDY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+  {
+    title:
+      "BUET Naval Architecture Students Win International Recognition",
+    source: "bdnews24.com",
+    description:
+      "Team designs innovative hybrid ferry with enhanced safety features for African river transport, securing third place globally.",
+    link: "https://www.bdnews24.com",
+    image:
+      "https://images.unsplash.com/photo-1619425192533-4ae6ae039af4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHN0dWRlbnRzJTIwdGVhbSUyMHN1Y2Nlc3MlMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzQ1NDcwNjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+]
+
 const WFSA2023 = () => {
+
+  const [emblaRef] = useEmblaCarousel(
+    { loop: true, align: "start" },
+    [Autoplay({ delay: 4000, stopOnInteraction: false })]
+  );
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 -mt-20">
       {/* Ferry Image Hero Section */}
@@ -206,136 +271,52 @@ const WFSA2023 = () => {
             Outreach and Media <span className="text-red-500">Coverage</span>
           </motion.h2>
 
-          <div className="max-w-7xl mx-auto">
-            <Slider
-              dots={true}
-              infinite={true}
-              speed={500}
-              slidesToShow={3}
-              slidesToScroll={1}
-              autoplay={true}
-              autoplaySpeed={4000}
-              responsive={[
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                  },
-                },
-                {
-                  breakpoint: 640,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                  },
-                },
-              ]}
-            >
-              {[
-                {
-                  title: "Team Black Pearl Secures Third Place at WFSA 2026",
-                  source: "BUET Official Website",
-                  description:
-                    "BUET students excel in international ferry design competition with innovative CNG-powered solution for Niger River transport.",
-                  link: "https://www.buet.ac.bd",
-                  image:
-                    "https://images.unsplash.com/photo-1619425192533-4ae6ae039af4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHN0dWRlbnRzJTIwdGVhbSUyMHN1Y2Nlc3MlMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzQ1NDcwNjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-                {
-                  title: "BUET Team Shines in World Ferry Safety Competition",
-                  source: "The Daily Star",
-                  description:
-                    "Bangladeshi engineering students design sustainable passenger ferry for Niger River route with CNG-Electric hybrid system.",
-                  link: "https://www.thedailystar.net",
-                  image:
-                    "https://images.unsplash.com/photo-1771699435062-3072daa0418f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXdzcGFwZXIlMjBqb3VybmFsaXNtJTIwQmFuZ2xhZGVzaCUyMG1lZGlhfGVufDF8fHx8MTc3NDU0NzA2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-                {
-                  title:
-                    "বুয়েটের শিক্ষার্থীদের ফেরি ডিজাইনে আন্তর্জাতিক স্বীকৃতি",
-                  source: "Prothom Alo",
-                  description:
-                    "টিম ব্ল্যাক পার্ল বিশ্ব ফেরি নিরাপত্তা প্রতিযোগিতায় তৃতীয় স্থান অর্জন করেছে সিএনজি চালিত যাত্রীবাহী ফেরির নকশার মাধ্যমে।",
-                  link: "https://www.prothomalo.com",
-                  image:
-                    "https://images.unsplash.com/photo-1632679090212-612ac1f4d76f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcm5hdGlvbmFsJTIwY29tcGV0aXRpb24lMjBhd2FyZCUyMHdpbm5pbmd8ZW58MXx8fHwxNzc0NTQ3MDY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-                {
-                  title:
-                    "Celebrating Team Black Pearl's Achievement at WFSA 2026",
-                  source: "BUET Facebook Official",
-                  description:
-                    "Official announcement and congratulations from BUET administration for WFSA 2026 third place achievement with innovative ferry design.",
-                  link: "https://www.facebook.com/buet1912",
-                  image:
-                    "https://images.unsplash.com/photo-1571927098989-32b9f3c26181?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCVUVUJTIwdW5pdmVyc2l0eSUyMGNhbXB1cyUyMGJ1aWxkaW5nfGVufDF8fHx8MTc3NDU0NzA2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-                {
-                  title: "বুয়েট শিক্ষার্থীদের ফেরি ডিজাইনে বৈশ্বিক সাফল্য",
-                  source: "Bangladesh Pratidin",
-                  description:
-                    "নাইজার নদীর জন্য পরিবেশবান্ধব সিএনজি-ইলেকট্রিক হাইব্রিড চালিত যাত্রীবাহী ফেরির উদ্ভাবনী নকশা।",
-                  link: "https://www.bd-pratidin.com",
-                  image:
-                    "https://images.unsplash.com/photo-1582638810035-acbf125821bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmZXJyeSUyMGJvYXQlMjBzdXN0YWluYWJsZSUyMHRyYW5zcG9ydCUyMGlubm92YXRpb258ZW58MXx8fHwxNzc0NTQ3MDY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-                {
-                  title:
-                    "BUET Naval Architecture Students Win International Recognition",
-                  source: "bdnews24.com",
-                  description:
-                    "Team designs innovative hybrid ferry with enhanced safety features for African river transport, securing third place globally.",
-                  link: "https://www.bdnews24.com",
-                  image:
-                    "https://images.unsplash.com/photo-1619425192533-4ae6ae039af4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHN0dWRlbnRzJTIwdGVhbSUyMHN1Y2Nlc3MlMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzQ1NDcwNjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-              ].map((article, index) => (
-                <div key={index} className="px-2 md:px-4">
-                  <motion.a
-                    href={article.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    whileHover={{ scale: 1.05, y: -10 }}
-                    className="block bg-white rounded-xl border-2 border-red-500/30 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-96"
-                  >
-                    <div className="flex flex-col h-full">
-                      {/* Image Section */}
-                      <div className="h-36 md:h-48 overflow-hidden shrink-0">
-                        <ImageWithFallback
-                          src={article.image}
-                          alt={article.title}
-                          className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                        />
-                      </div>
-
-                      {/* Content Section */}
-                      <div className="p-4 md:p-5 flex flex-col flex-grow overflow-hidden">
-                        <div className="bg-red-600 text-white px-3 py-1.5 rounded-lg mb-3 text-xs font-semibold text-center shrink-0">
-                          {article.source}
-                        </div>
-                        <h3 className="text-base md:text-lg text-gray-900 mb-2 font-bold leading-snug shrink-0 line-clamp-2">
-                          {article.title}
-                        </h3>
-                        <p className="text-gray-600 text-xs md:text-sm leading-relaxed flex-grow overflow-hidden line-clamp-3">
-                          {article.description}
-                        </p>
-                        <div className="mt-3 shrink-0">
-                          <span className="text-red-600 font-semibold hover:underline text-sm">
-                            Read More →
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.a>
-                </div>
-              ))}
-            </Slider>
+          <div className="overflow-hidden w-full" ref={emblaRef}>
+  <div className="flex">
+    {data.map((article, index) => (
+      <div key={index} className="flex-none w-full sm:w-1/2 lg:w-1/3 px-2">
+        <motion.a
+          href={article.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: index * 0.1 }}
+          whileHover={{ scale: 1.05, y: -10 }}
+          style={{ display: "block" }}
+          className="bg-white rounded-xl border-2 border-red-500/30 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-96"
+        >
+          <div className="flex flex-col h-full">
+            <div className="h-36 md:h-48 overflow-hidden shrink-0">
+              <ImageWithFallback
+                src={article.image}
+                alt={article.title}
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+              />
+            </div>
+            <div className="p-4 md:p-5 flex flex-col flex-grow overflow-hidden">
+              <div className="bg-red-600 text-white px-3 py-1.5 rounded-lg mb-3 text-xs font-semibold text-center shrink-0">
+                {article.source}
+              </div>
+              <h3 className="text-base md:text-lg text-gray-900 mb-2 font-bold leading-snug shrink-0 line-clamp-2">
+                {article.title}
+              </h3>
+              <p className="text-gray-600 text-xs md:text-sm leading-relaxed flex-grow overflow-hidden line-clamp-3">
+                {article.description}
+              </p>
+              <div className="mt-3 shrink-0">
+                <span className="text-red-600 font-semibold hover:underline text-sm">
+                  Read More →
+                </span>
+              </div>
+            </div>
           </div>
+        </motion.a>
+      </div>
+    ))}
+  </div>
+</div>
         </div>
       </section>
 

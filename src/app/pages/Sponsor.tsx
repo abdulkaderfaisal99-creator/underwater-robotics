@@ -130,7 +130,7 @@ const Sponsor = () => {
       </section>
 
       {/* Donate & Sponsorship Section */}
-      <section className="h-[30vh] bg-white">
+      <section className="md:h-[30vh] h-full bg-white">
         <div className="container mx-auto px-4 h-full">
           <div className="grid md:grid-cols-2 gap-8 h-full">
             {/* Donate Us */}

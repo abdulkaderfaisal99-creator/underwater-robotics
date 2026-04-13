@@ -59,6 +59,7 @@ const Navbar = () => {
               className="relative"
               onMouseEnter={() => setIsRoboSubDropdownOpen(true)}
               onMouseLeave={() => setIsRoboSubDropdownOpen(false)}
+              // onMouseClick={() => setIsRoboSubDropdownOpen(!isRoboSubDropdownOpen)}
             >
               <button className="flex items-center space-x-1 text-white hover:text-blue-100 transition-colors px-3 py-2 font-semibold">
                 <span>RoboSub</span>
@@ -251,7 +252,7 @@ const Navbar = () => {
                     WFSA 2025
                   </Link>
                   <Link
-                    to="/wfsa-2023"
+                    to="/wfsa-2026"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block py-2 text-white hover:text-red-400"
                   >

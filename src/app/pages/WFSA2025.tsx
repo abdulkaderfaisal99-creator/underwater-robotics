@@ -3,16 +3,78 @@ import { Award, Leaf, Cpu, ExternalLink, Newspaper } from "lucide-react";
 import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import Footer from "../components/Footer";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 // Import ferry image
 import ferryHeroImage from "../../assets/ef081b22dde9e51fd21dfc0737ff828e560a63ef.png";
 import teamPhotoWithFlag from "../../assets/fff8a819f598251b9a912707ba9df8795776f52d.png";
 import principalParticularsImg from "../../assets/9296956df89536fa5005ed0f2e5dd8fbf935a292.png";
 
+const data = [
+  {
+    title:
+      "BUET Students Win First Prize in International Ferry Design Competition",
+    source: "BUET NAME Department",
+    description:
+      'Team Black Pearl from BUET\'s Naval Architecture & Marine Engineering Department wins first place at WFSA 2025 with innovative electric ferry design "Naija Spirit"',
+    link: "https://name.buet.ac.bd/news/buet-students-win-first-prize-in-international-ferry-design-competition",
+    image:
+      "https://images.unsplash.com/photo-1757143137392-0b1e1a27a7de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwYXdhcmQlMjBjZXJlbW9ueSUyMHN0dWRlbnRzJTIwdHJvcGh5JTIwY2VsZWJyYXRpb258ZW58MXx8fHwxNzc0NTQzNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+  {
+    title: "Team Black Pearl - The Champions",
+    source: "Engineer's Diary BUET",
+    description:
+      "Team Black Pearl from BUET is proud to be crowned the champions at the World Ferry Safety Association (WFSA) 2025 Ferry Design Competition",
+    link: "https://www.facebook.com/EngineersDiaryBUET/photos/team-black-pearl-the-champions-from-buet/1073199524823912/",
+    image:
+      "https://images.unsplash.com/photo-1768796370407-6d36619e7d6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHRlYW0lMjBzdHVkZW50cyUyMHByb2plY3QlMjBzdWNjZXNzfGVufDF8fHx8MTc3NDU0MzY4NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+  {
+    title: "Hydrogen-Powered Ferry Innovation",
+    source: "WFSA 2025 Competition",
+    description:
+      'Team Black Pearl\'s "Naija Spirit" features cutting-edge hydrogen fuel cell technology for sustainable passenger transport in Lagos waterways',
+    link: "https://name.buet.ac.bd/news/buet-students-win-first-prize-in-international-ferry-design-competition",
+    image:
+      "https://images.unsplash.com/photo-1765401813089-c8aa3c0280db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpYyUyMGZlcnJ5JTIwc3VzdGFpbmFibGUlMjB0cmFuc3BvcnQlMjBpbm5vdmF0aW9ufGVufDF8fHx8MTc3NDU0NTE0OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+  {
+    title: "Ferry Design Excellence",
+    source: "Engineering Achievement",
+    description:
+      "BUET team showcases world-class engineering skills with innovative ferry design featuring electric propulsion and hydrogen backup system",
+    link: "https://name.buet.ac.bd",
+    image:
+      "https://images.unsplash.com/photo-1585884570069-d9249f14d31b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmZXJyeSUyMGJvYXQlMjBkZXNpZ24lMjBlbmdpbmVlcmluZyUyMG1vZGVsfGVufDF8fHx8MTc3NDU0MzY4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+  {
+    title: "Bangladesh Engineering Pride",
+    source: "National Achievement",
+    description:
+      "Bangladesh media celebrates Team Black Pearl's international success, highlighting the country's engineering excellence on the global stage",
+    link: "https://name.buet.ac.bd/news/buet-students-win-first-prize-in-international-ferry-design-competition",
+    image:
+      "https://images.unsplash.com/photo-1771699435062-3072daa0418f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCYW5nbGFkZXNoJTIwbmV3c3BhcGVyJTIwam91cm5hbGlzbSUyMG1lZGlhfGVufDF8fHx8MTc3NDU0MjMyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+  {
+    title: "Sustainable Maritime Innovation",
+    source: "Green Technology",
+    description:
+      "Team Black Pearl's award-winning design demonstrates commitment to zero-emission maritime transport with hydrogen fuel cell integration",
+    link: "https://name.buet.ac.bd",
+    image:
+      "https://images.unsplash.com/photo-1757143137392-0b1e1a27a7de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwYXdhcmQlMjBjZXJlbW9ueSUyMHN0dWRlbnRzJTIwdHJvcGh5JTIwY2VsZWJyYXRpb258ZW58MXx8fHwxNzc0NTQzNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
+]
+
 const WFSA2025 = () => {
+  const [emblaRef] = useEmblaCarousel(
+    { loop: true, align: "start" },
+    [Autoplay({ delay: 4000, stopOnInteraction: false })]
+  );
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 -mt-20">
       {/* Ferry Hero Image Section */}
@@ -198,134 +260,52 @@ const WFSA2025 = () => {
             Media Outreach and <span className="text-red-500">Coverage</span>
           </motion.h2>
 
-          <div className="w-full">
-            <Slider
-              dots={true}
-              infinite={true}
-              speed={500}
-              slidesToShow={3}
-              slidesToScroll={1}
-              autoplay={true}
-              autoplaySpeed={4000}
-              responsive={[
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                  },
-                },
-                {
-                  breakpoint: 640,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                  },
-                },
-              ]}
-            >
-              {[
-                {
-                  title:
-                    "BUET Students Win First Prize in International Ferry Design Competition",
-                  source: "BUET NAME Department",
-                  description:
-                    'Team Black Pearl from BUET\'s Naval Architecture & Marine Engineering Department wins first place at WFSA 2025 with innovative electric ferry design "Naija Spirit"',
-                  link: "https://name.buet.ac.bd/news/buet-students-win-first-prize-in-international-ferry-design-competition",
-                  image:
-                    "https://images.unsplash.com/photo-1757143137392-0b1e1a27a7de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwYXdhcmQlMjBjZXJlbW9ueSUyMHN0dWRlbnRzJTIwdHJvcGh5JTIwY2VsZWJyYXRpb258ZW58MXx8fHwxNzc0NTQzNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-                {
-                  title: "Team Black Pearl - The Champions",
-                  source: "Engineer's Diary BUET",
-                  description:
-                    "Team Black Pearl from BUET is proud to be crowned the champions at the World Ferry Safety Association (WFSA) 2025 Ferry Design Competition",
-                  link: "https://www.facebook.com/EngineersDiaryBUET/photos/team-black-pearl-the-champions-from-buet/1073199524823912/",
-                  image:
-                    "https://images.unsplash.com/photo-1768796370407-6d36619e7d6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHRlYW0lMjBzdHVkZW50cyUyMHByb2plY3QlMjBzdWNjZXNzfGVufDF8fHx8MTc3NDU0MzY4NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-                {
-                  title: "Hydrogen-Powered Ferry Innovation",
-                  source: "WFSA 2025 Competition",
-                  description:
-                    'Team Black Pearl\'s "Naija Spirit" features cutting-edge hydrogen fuel cell technology for sustainable passenger transport in Lagos waterways',
-                  link: "https://name.buet.ac.bd/news/buet-students-win-first-prize-in-international-ferry-design-competition",
-                  image:
-                    "https://images.unsplash.com/photo-1765401813089-c8aa3c0280db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpYyUyMGZlcnJ5JTIwc3VzdGFpbmFibGUlMjB0cmFuc3BvcnQlMjBpbm5vdmF0aW9ufGVufDF8fHx8MTc3NDU0NTE0OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-                {
-                  title: "Ferry Design Excellence",
-                  source: "Engineering Achievement",
-                  description:
-                    "BUET team showcases world-class engineering skills with innovative ferry design featuring electric propulsion and hydrogen backup system",
-                  link: "https://name.buet.ac.bd",
-                  image:
-                    "https://images.unsplash.com/photo-1585884570069-d9249f14d31b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmZXJyeSUyMGJvYXQlMjBkZXNpZ24lMjBlbmdpbmVlcmluZyUyMG1vZGVsfGVufDF8fHx8MTc3NDU0MzY4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-                {
-                  title: "Bangladesh Engineering Pride",
-                  source: "National Achievement",
-                  description:
-                    "Bangladesh media celebrates Team Black Pearl's international success, highlighting the country's engineering excellence on the global stage",
-                  link: "https://name.buet.ac.bd/news/buet-students-win-first-prize-in-international-ferry-design-competition",
-                  image:
-                    "https://images.unsplash.com/photo-1771699435062-3072daa0418f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCYW5nbGFkZXNoJTIwbmV3c3BhcGVyJTIwam91cm5hbGlzbSUyMG1lZGlhfGVufDF8fHx8MTc3NDU0MjMyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-                {
-                  title: "Sustainable Maritime Innovation",
-                  source: "Green Technology",
-                  description:
-                    "Team Black Pearl's award-winning design demonstrates commitment to zero-emission maritime transport with hydrogen fuel cell integration",
-                  link: "https://name.buet.ac.bd",
-                  image:
-                    "https://images.unsplash.com/photo-1757143137392-0b1e1a27a7de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwYXdhcmQlMjBjZXJlbW9ueSUyMHN0dWRlbnRzJTIwdHJvcGh5JTIwY2VsZWJyYXRpb258ZW58MXx8fHwxNzc0NTQzNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-                },
-              ].map((article, index) => (
-                <div key={index} className="md:px-4">
-                  <motion.a
-                    href={article.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    whileHover={{ scale: 1.05, y: -10 }}
-                    className="block bg-white rounded-none md:rounded-xl border-2 border-red-500/30 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-96 w-screen md:w-auto"
-                  >
-                    <div className="flex flex-col h-full">
-                      {/* Image Section */}
-                      <div className="h-48 overflow-hidden">
-                        <ImageWithFallback
-                          src={article.image}
-                          alt={article.title}
-                          className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                        />
-                      </div>
-
-                      {/* Content Section */}
-                      <div className="p-4 md:p-6 flex flex-col flex-grow">
-                        <div className="bg-red-600 text-white px-4 py-2 rounded-lg mb-4 text-sm font-semibold text-center">
-                          {article.source}
-                        </div>
-                        <h3 className="text-xl text-gray-900 mb-3 font-bold flex-grow">
-                          {article.title}
-                        </h3>
-                        <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                          {article.description}
-                        </p>
-                        <div className="mt-auto">
-                          <span className="text-red-600 font-semibold hover:underline">
-                            Read More →
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.a>
-                </div>
-              ))}
-            </Slider>
+          <div className="overflow-hidden w-full" ref={emblaRef}>
+  <div className="flex">
+    {data.map((article, index) => (
+      <div key={index} className="flex-none w-full sm:w-1/2 lg:w-1/3 px-2">
+        <motion.a
+          href={article.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: index * 0.1 }}
+          whileHover={{ scale: 1.05, y: -10 }}
+          style={{ display: "block" }}
+          className="bg-white rounded-xl border-2 border-red-500/30 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-96"
+        >
+          <div className="flex flex-col h-full">
+            <div className="h-36 md:h-48 overflow-hidden shrink-0">
+              <ImageWithFallback
+                src={article.image}
+                alt={article.title}
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+              />
+            </div>
+            <div className="p-4 md:p-5 flex flex-col flex-grow overflow-hidden">
+              <div className="bg-red-600 text-white px-3 py-1.5 rounded-lg mb-3 text-xs font-semibold text-center shrink-0">
+                {article.source}
+              </div>
+              <h3 className="text-base md:text-lg text-gray-900 mb-2 font-bold leading-snug shrink-0 line-clamp-2">
+                {article.title}
+              </h3>
+              <p className="text-gray-600 text-xs md:text-sm leading-relaxed flex-grow overflow-hidden line-clamp-3">
+                {article.description}
+              </p>
+              <div className="mt-3 shrink-0">
+                <span className="text-red-600 font-semibold hover:underline text-sm">
+                  Read More →
+                </span>
+              </div>
+            </div>
           </div>
+        </motion.a>
+      </div>
+    ))}
+  </div>
+</div>
         </div>
       </section>
 

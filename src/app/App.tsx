@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
 } from "react-router";
+
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";

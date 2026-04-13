@@ -45,14 +45,6 @@ import sianWahadat from "../../assets/e578f090028b8360346dbbae259a4b0b87c7e107.p
 const Members = () => {
   const facultyMembers = [
     {
-      name: "Dr.Miad Al Mursaline",
-      title: "Faculty Advisor",
-      department: "Department of Naval Architecture & Marine Engineering",
-      image: sonarExpert,
-      email: "mailto:saifur@name.buet.ac.bd",
-      specialization: "Underwater Acoustics & Signal Processing",
-    },
-    {
       name: "Dr.Zobair Ibn Awal",
       title: "Faculty Advisor ",
       department: "Department of Naval Architecture & Marine Engineering",
@@ -60,6 +52,15 @@ const Members = () => {
       email: "mailto:ashikur@eee.buet.ac.bd",
       specialization: "Autonomous Systems & Control Theory",
     },
+    {
+      name: "Dr.Miad Al Mursaline",
+      title: "Faculty Advisor",
+      department: "Department of Naval Architecture & Marine Engineering",
+      image: sonarExpert,
+      email: "mailto:saifur@name.buet.ac.bd",
+      specialization: "Underwater Acoustics & Signal Processing",
+    }
+    
   ];
 
   const softwareTeam = [
@@ -126,7 +127,7 @@ const Members = () => {
       image: unjumOmi,
       linkedin: "https://linkedin.com/in/unjum-islam-omi",
       github: "https://github.com/unjumomi",
-      email: "mailto:unjum.omi@buet.ac.bd",
+      email: "mailto:unjumomibuet@gmail.com",
     },
     {
       name: "Juliet Florina",
@@ -187,7 +188,7 @@ const Members = () => {
       email: "mailto:meherab.api@buet.ac.bd",
     },
     {
-      name: "SM Sajidul Haque",
+      name: "S.M. Sajidul Haque",
       role: "Design",
       ugId: "2112007",
       image: sajidulHaque,
@@ -444,7 +445,7 @@ const Members = () => {
                 <div className="relative h-72 overflow-hidden bg-gradient-to-b from-blue-100 to-blue-50 flex-shrink-0">
                   <img
                     src={touhid}
-                    alt="Touhidul Islam"
+                    alt="Thouhidul Islam"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent" />
@@ -454,7 +455,7 @@ const Members = () => {
                 </div>
                 <div className="p-6 text-center flex-grow flex flex-col">
                   <h3 className="text-2xl md:text-3xl text-gray-900 mb-2 font-bold">
-                    Touhidul Islam
+                  Thouhidul Islam
                   </h3>
                   <p className="text-blue-600 font-semibold text-lg mb-2">
                     Vice Captain
@@ -495,7 +496,7 @@ const Members = () => {
                 <div className="relative h-72 overflow-hidden bg-gradient-to-b from-green-100 to-green-50 flex-shrink-0">
                   <img
                     src={mominulHimel}
-                    alt="Mominul Islam Hhimel"
+                    alt="MD. Mominul Islam"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-green-950/70 to-transparent" />
@@ -505,7 +506,7 @@ const Members = () => {
                 </div>
                 <div className="p-6 text-center flex-grow flex flex-col">
                   <h3 className="text-2xl md:text-3xl text-gray-900 mb-2 font-bold">
-                    Mominul Islam Hhimel
+                  MD. Mominul Islam
                   </h3>
                   <p className="text-green-600 font-semibold text-lg mb-2">
                     Technical Supervisor
