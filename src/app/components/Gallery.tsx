@@ -4,13 +4,15 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
+import gallery1 from "../../assets/gallery.png"; 
+
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const images = [
     {
-      url: "https://drive.google.com/file/d/1kzIifL3b-Sg5G5g92X-KXTiM39vl0KMU/view?usp=sharing",
-      alt: "Underwater Submarine Robotics",
+      url: gallery1,
+      alt: "Underwater rover",
     },
     {
       url: "https://images.unsplash.com/photo-1684907110935-dcb64eba6add?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHdvcmtzcGFjZSUyMGxhYm9yYXRvcnl8ZW58MXx8fHwxNzY5MjY0NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
