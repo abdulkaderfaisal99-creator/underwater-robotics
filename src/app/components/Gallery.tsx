@@ -9,7 +9,7 @@ const Gallery = () => {
 
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1754297813553-43eb3a9f65a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bmRlcndhdGVyJTIwc3VibWFyaW5lJTIwcm9ib3RpY3N8ZW58MXx8fHwxNzY5MjY0NTY2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      url: "https://drive.google.com/file/d/1kzIifL3b-Sg5G5g92X-KXTiM39vl0KMU/view?usp=sharing",
       alt: "Underwater Submarine Robotics",
     },
     {
