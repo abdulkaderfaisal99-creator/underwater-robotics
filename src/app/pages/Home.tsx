@@ -317,7 +317,7 @@ const Home = () => {
                 </h3>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                BUET Black Pearl was formed with a bold vision — to represent
+                Team Black Pearl was formed with a bold vision — to represent
                 Bangladesh University of Engineering and Technology on the
                 global stage of underwater robotics through RoboSub 2026. Our
                 mission is to design and develop a highly capable Autonomous
@@ -368,7 +368,7 @@ const Home = () => {
               <ul className="space-y-3">
                 <li>
                   <p className="text-gray-700 text-lg leading-relaxed">
-                    BUET Black Pearl is inspired by a legacy of proven
+                    Team Black Pearl is inspired by a legacy of proven
                     engineering excellence. Our journey toward RoboSub 2026
                     builds upon a proud achievement — becoming World Champion at
                     the WFSA International Ferry Design Competition, where our
