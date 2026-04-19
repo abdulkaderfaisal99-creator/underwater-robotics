@@ -21,8 +21,8 @@ const ContactUs = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      value: '+8801743-657203',
-      link: 'tel:+8801743-657203',
+      value: '+8801732-046270',
+      link: 'tel:+8801732-046270',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
