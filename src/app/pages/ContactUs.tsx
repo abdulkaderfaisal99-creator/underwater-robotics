@@ -22,12 +22,14 @@ const ContactUs = () => {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
       value: '+8801732-046270',
+      value2: '02 223363605',
       link: 'tel:+8801732-046270',
+      link2: 'tel:02223363605',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Location',
-      value: 'Bangladesh University of Engineering and Technology, Mechanical Building',
+      value: "Underwater Robotics Laboratory (URL) Department of Naval Architecture and Marine Engineering (NAME) Bangladesh University of Engineering and Technology (BUET) Dhaka 1000, Bangladesh",
       link: '#map',
     },
   ];
@@ -97,7 +99,16 @@ const ContactUs = () => {
                   {info.icon}
                 </div>
                 <h3 className="text-gray-900 text-lg mb-2 font-bold">{info.title}</h3>
-                <p className="text-gray-600">{info.value}</p>
+                <p className="text-gray-600">
+  <a href={info.link} className="hover:text-red-500 transition-colors block text-center">
+    {info.value}
+  </a>
+  {info.value2 && (
+    <a href={info.link2} className="hover:text-red-500 transition-colors block text-center">
+      {info.value2}
+    </a>
+  )}
+</p>
               </motion.a>
             ))}
           </div>
