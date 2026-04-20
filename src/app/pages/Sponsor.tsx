@@ -172,16 +172,30 @@ const Sponsor = () => {
                 <p className="text-gray-700 mb-4 max-w-xs">
                   Explore partnership opportunities with our team
                 </p>
+                <div className="flex flex-col md:flex-row gap-4">
                 <motion.a
-                  href="https://drive.google.com/file/d/1BHZoawm_2qkBTjhW-lzTYXoAfLOMa5jv/view?usp=sharing"
+                  href="https://drive.google.com/file/d/19lE26kp-JyB1HFxeG90rjMTuxoTLNKeh/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                 >
-                  Click Here
+                  Sponsor proposal
                 </motion.a>
+
+                <motion.a
+                  href="https://drive.google.com/file/d/1UAqscHrl_NpFzNUfV26rQNh--FL1El9D/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                >
+                  Project profile
+                </motion.a>
+                
+                </div>
               </div>
             </motion.div>
           </div>
