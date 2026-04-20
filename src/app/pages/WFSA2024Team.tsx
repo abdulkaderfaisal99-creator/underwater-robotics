@@ -20,7 +20,7 @@ import samiunSheamImage from "../../assets/d03ec052d373863909fdf9f176e88ce8f3d80
 
 const WFSA2024Team = () => {
   const facultyAdvisor = {
-    name: "Dr. Jubair Ibne Awal",
+    name: "Dr. Zobair Ibn Awal",
     role: "Faculty Advisor",
     department: "Department of Naval Architecture & Marine Engineering",
     image: jubairAwalImage,

@@ -45,7 +45,7 @@ import sianWahadat from "../../assets/e578f090028b8360346dbbae259a4b0b87c7e107.p
 const Members = () => {
   const facultyMembers = [
     {
-      name: "Dr.Zobair Ibn Awal",
+      name: "Dr. Zobair Ibn Awal",
       title: "Faculty Advisor ",
       department: "Department of Naval Architecture & Marine Engineering",
       image: roboticsExpert,

@@ -20,7 +20,7 @@ import jubairImage from "../../assets/1e34964af447f4f8ea1a78b55feacd203a6c5863.p
 
 const WFSA2023Team = () => {
   const facultyAdvisor = {
-    name: "Dr. Jubair Ibne Awal",
+    name: "Dr. Zobair Ibn Awal",
     role: "Faculty Advisor",
     department: "Department of Naval Architecture & Marine Engineering",
     image: jubairImage,

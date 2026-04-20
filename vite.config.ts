@@ -19,4 +19,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  server: {
+    proxy: {
+      '/gdrive': {
+        target: 'https://drive.google.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/gdrive/, ''),
+      },
+    },
+  },
 })

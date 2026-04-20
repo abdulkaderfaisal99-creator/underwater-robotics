@@ -15,7 +15,7 @@ const Gallery = () => {
       alt: "Underwater rover",
     },
     {
-      url: "https://images.unsplash.com/photo-1684907110935-dcb64eba6add?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHdvcmtzcGFjZSUyMGxhYm9yYXRvcnl8ZW58MXx8fHwxNzY5MjY0NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      url: "https://lh3.googleusercontent.com/d/1KR3vcum6JnYt_SjHPzcqVTzuYy52xiAk",
       alt: "Engineering Workspace Laboratory",
     },
     {
@@ -164,7 +164,7 @@ const Gallery = () => {
                   onClick={() => openImage(index)}
                   style={{ height: "280px" }}
                 >
-                  <ImageWithFallback
+                  <img
                     src={image.url}
                     alt={image.alt}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

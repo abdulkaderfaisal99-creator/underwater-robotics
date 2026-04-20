@@ -19,7 +19,7 @@ import teamPhotoWithFlag from "../../assets/fff8a819f598251b9a912707ba9df8795776
 
 const WFSA2025Team = () => {
   const facultyAdvisor = {
-    name: "Dr. Jubair Ibne Awal",
+    name: "Dr. Zobair Ibn Awal",
     role: "Faculty Advisor",
     department: "Department of Naval Architecture & Marine Engineering",
     image: jubairAwalImage,

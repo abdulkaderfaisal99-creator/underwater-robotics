@@ -175,7 +175,7 @@ const Sponsor = () => {
                 <div className="flex flex-col md:flex-row gap-4">
                 <motion.a
                   href="https://drive.google.com/file/d/19lE26kp-JyB1HFxeG90rjMTuxoTLNKeh/view?usp=drive_link"
-                  target="_blank"
+                  // target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -186,7 +186,7 @@ const Sponsor = () => {
 
                 <motion.a
                   href="https://drive.google.com/file/d/1UAqscHrl_NpFzNUfV26rQNh--FL1El9D/view?usp=drive_link"
-                  target="_blank"
+                  // target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
