@@ -167,31 +167,14 @@ const Sponsor = () => {
                 <p className="text-gray-700 mb-4 max-w-xs">
                   Support our mission with your generous contribution
                 </p>
-                <div className="bg-white shadow-md p-4 rounded-lg w-full max-w-sm">
-
-  <InfoRow label="Bank Name" value="Sonali Bank" />
-  <InfoRow label="Account Type" value="Current Account" />
-  <InfoRow label="Account Name" value="TEAM BLACK PEARL" />
-  <InfoRow label="Account Number" value="4404002001132" />
-  <InfoRow label="Routing Number" value="200270522" />
-  <InfoRow label="SWIFT Code" value="BSONBDDHLOD" />
-
-  {/* Copy All Button */}
-  <button
-    onClick={() =>
-      copyToClipboard(`Bank Name: Sonali Bank
-Account Type: Current Account
-Account Name: TEAM BLACK PEARL
-Account Number: 4404002001132
-Routing Number: 200270522
-SWIFT Code: BSONBDDHLOD`)
-    }
-    className="mt-3 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
-  >
-    Copy All Details
-  </button>
-
-</div>
+                <motion.a
+                  href="mailto:blackpearl.auv@buet.ac.bd?subject=Donation Inquiry"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                >
+                  Click Here
+                </motion.a>
               </div>
             </motion.div>
 
