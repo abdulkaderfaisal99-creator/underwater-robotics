@@ -7,6 +7,7 @@ import { useState } from "react";
 import gallery1 from "../../assets/gallery.png"; 
 import gallery2 from "../../assets/gallery-cameradetection.jpeg"; 
 import gallery3 from "../../assets/lasercuttingoperation.jpeg"; 
+import gallery4 from "../../assets/Final assmebly.jpeg"; 
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -26,68 +27,17 @@ const Gallery = () => {
     },
     {
       url: gallery3,
-      alt: "Laser cutting operation.jpeg",
+      alt: "Laser cutting operation",
     },
     {
-      url: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2JvdCUyMG1lY2hhbmljYWwlMjBlbmdpbmVlcmluZ3xlbnwxfHx8fDE3NjkyNjQ1Njh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Robot Mechanical Engineering",
+      url: gallery4,
+      alt: "Final assmebly",
     },
     {
-      url: "https://images.unsplash.com/photo-1739298061740-5ed03045b280?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NjkxOTIzMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Team Collaboration Workspace",
+      url: gallery4,
+      alt: "Final assmebly",
     },
-    {
-      url: "https://images.unsplash.com/photo-1623494351017-976290fd8496?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bmRlcndhdGVyJTIwcGhvdG9ncmFwaHklMjBtYXJpbmV8ZW58MXx8fHwxNzY5MjY0NTY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Underwater Photography Marine",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHByb2dyYW1taW5nJTIwY29kZXxlbnwxfHx8fDE3NjkyMjkyODN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Computer Programming Code",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1708454088918-9df52c542bc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmZXJyeSUyMHNoaXAlMjBvY2VhbnxlbnwxfHx8fDE3NjkyNjQ1NzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Ferry Ship Ocean",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1760493828288-d2dbb70d18c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGxhYnxlbnwxfHx8fDE3NjkxODA0NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Technology Innovation Lab",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1613213322190-b9eb59313eec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwc2VhJTIwdW5kZXJ3YXRlcnxlbnwxfHx8fDE3NjkyNjQ1NzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Deep Sea Underwater",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1764769092438-0c4907e30e8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJpdGltZSUyMGVuZ2luZWVyaW5nJTIwdmVzc2VsfGVufDF8fHx8MTc2OTI2NDU3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Maritime Engineering Vessel",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1767448068187-5be3cbc848c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2JvdGljcyUyMGNvbXBvbmVudHMlMjBwYXJ0c3xlbnwxfHx8fDE3NjkyNjQ1NzF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Robotics Components Parts",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1768796370407-6d36619e7d6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMHRlYW0lMjBlbmdpbmVlcmluZ3xlbnwxfHx8fDE3NjkyNjQ1NzF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Students Team Engineering",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1610112238174-ed5e721668d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMHdhdmVzJTIwYmx1ZSUyMHdhdGVyfGVufDF8fHx8MTc2OTE2NTUxN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Ocean Waves Blue Water",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1721244654346-9be0c0129e36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaGlwJTIwZGVzaWduJTIwYmx1ZXByaW50fGVufDF8fHx8MTc2OTI2NDU3Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Ship Design Blueprint",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1759712659045-cc187c68f718?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bmRlcndhdGVyJTIwdmVoaWNsZSUyMHN1Ym1hcmluZXxlbnwxfHx8fDE3NjkyNjQ1NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Underwater Vehicle Submarine",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1763078163232-6e3eeae24dad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJpbmUlMjB0ZWNobm9sb2d5JTIwZXF1aXBtZW50fGVufDF8fHx8MTc2OTI2NDU3M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Marine Technology Equipment",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1762345127396-ac4a970436c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wZXRpdGlvbiUyMHRyb3BoeSUyMGF3YXJkfGVufDF8fHx8MTc2OTI2NDU3M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Competition Trophy Award",
-    },
+
   ];
 
   const openImage = (index: number) => {
