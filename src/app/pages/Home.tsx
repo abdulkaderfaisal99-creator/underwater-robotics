@@ -317,7 +317,7 @@ const Home = () => {
                 </h3>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Black Pearl was formed with a bold vision — to represent
+                 Team Black Pearl was formed with a bold vision — to represent
                 Bangladesh University of Engineering and Technology on the
                 global stage of underwater robotics through RoboSub 2026. Our
                 mission is to design and develop a highly capable Autonomous
