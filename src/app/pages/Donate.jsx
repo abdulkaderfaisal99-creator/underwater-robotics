@@ -16,16 +16,16 @@ const Donate = () => {
         { label: "SWIFT Code", value: "BSONBDDHLOD" },
       ],
     },
-    {
-      bankName: "Second Bank",
-      accountType: "Add Account Type",
-      details: [
-        { label: "Account Name", value: "ADD ACCOUNT NAME" },
-        { label: "Account Number", value: "ADD ACCOUNT NUMBER" },
-        { label: "Routing Number", value: "ADD ROUTING NUMBER" },
-        { label: "SWIFT Code", value: "ADD SWIFT CODE" },
-      ],
-    },
+ //   {
+ //     bankName: "Second Bank",
+ //     accountType: "Add Account Type",
+ //     details: [
+ //       { label: "Account Name", value: "ADD ACCOUNT NAME" },
+ //       { label: "Account Number", value: "ADD ACCOUNT NUMBER" },
+ //       { label: "Routing Number", value: "ADD ROUTING NUMBER" },
+ //       { label: "SWIFT Code", value: "ADD SWIFT CODE" },
+ //     ],
+ //   },
   ];
 
   const InfoRow = ({ label, value }) => (
