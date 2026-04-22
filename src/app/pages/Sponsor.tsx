@@ -7,7 +7,27 @@ import albumImg1 from "../../assets/4e2900d28fd2aad54a10ae7ebc3c636b1541933a.png
 import albumImg2 from "../../assets/07d5f73c72932623edaf345f0e55006d9b2e66ee.png";
 import albumImg3 from "../../assets/058ce268c11cfd4bcc6cf8235d3d9a95a43f3e03.png";
 
-const Sponsor = () => {
+
+
+const Sponsor = () => { 
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text);
+  };
+  const InfoRow = ({ label, value }) => (
+    <div className="flex justify-between items-center bg-gray-100 px-3 py-2 rounded-md mb-2">
+      <div className="text-left">
+        <p className="text-xs text-gray-500">{label}</p>
+        <p className="text-sm font-medium">{value}</p>
+      </div>
+      <button
+        onClick={() => copyToClipboard(value)}
+        className="text-xs bg-blue-600 text-white px-2 py-1 rounded hover:bg-blue-700"
+      >
+        Copy
+      </button>
+    </div>
+  );
+  
   return (
     <div className="min-h-screen -mt-20">
       {/* Hero Section */}
@@ -147,14 +167,31 @@ const Sponsor = () => {
                 <p className="text-gray-700 mb-4 max-w-xs">
                   Support our mission with your generous contribution
                 </p>
-                <motion.a
-                  href="mailto:blackpearl.auv@buet.ac.bd?subject=Donation Inquiry"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
-                >
-                  Click Here
-                </motion.a>
+                <div className="bg-white shadow-md p-4 rounded-lg w-full max-w-sm">
+
+  <InfoRow label="Bank Name" value="Sonali Bank" />
+  <InfoRow label="Account Type" value="Current Account" />
+  <InfoRow label="Account Name" value="TEAM BLACK PEARL" />
+  <InfoRow label="Account Number" value="4404002001132" />
+  <InfoRow label="Routing Number" value="200270522" />
+  <InfoRow label="SWIFT Code" value="BSONBDDHLOD" />
+
+  {/* Copy All Button */}
+  <button
+    onClick={() =>
+      copyToClipboard(`Bank Name: Sonali Bank
+Account Type: Current Account
+Account Name: TEAM BLACK PEARL
+Account Number: 4404002001132
+Routing Number: 200270522
+SWIFT Code: BSONBDDHLOD`)
+    }
+    className="mt-3 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
+  >
+    Copy All Details
+  </button>
+
+</div>
               </div>
             </motion.div>
 
