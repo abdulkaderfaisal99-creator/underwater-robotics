@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
 } from "react-router";
@@ -22,6 +22,7 @@ import ContactUs from "./pages/ContactUs";
 import Stories from "./pages/Stories";
 import Papers from "./pages/Papers";
 import Members from "./pages/Members";
+import Donate from "./pages/Donate";
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/papers" element={<Papers />} />
             <Route path="/sponsor" element={<Sponsor />} />
+            <Route path="/donate" element={<Donate />} />
             <Route path="/robosub" element={<RoboSub />} />
             <Route
               path="/robosub-2026"
