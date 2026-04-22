@@ -50,8 +50,11 @@ const Donate = () => {
 
   return (
     <div className="min-h-screen bg-blue-50 px-4 py-10">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div
+        className={`mx-auto grid grid-cols-1 gap-6 ${
+          banks.length > 1 ? "max-w-6xl md:grid-cols-2" : "max-w-2xl"
+        }`}
+      >
           {banks.map((bank) => (
             <div
               key={bank.bankName}
@@ -77,7 +80,6 @@ const Donate = () => {
               </button>
             </div>
           ))}
-        </div>
       </div>
     </div>
   );
