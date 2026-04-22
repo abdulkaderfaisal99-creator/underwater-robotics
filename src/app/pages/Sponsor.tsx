@@ -168,7 +168,8 @@ const Sponsor = () => {
                   Support our mission with your generous contribution
                 </p>
                 <motion.a
-                  href="mailto:blackpearl.auv@buet.ac.bd?subject=Donation Inquiry"
+                  href="/donate"
+                  target="_blank"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
