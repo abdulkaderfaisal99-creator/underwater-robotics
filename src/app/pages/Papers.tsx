@@ -12,7 +12,7 @@ const Papers = () => {
   const papers = [
     {
       year: '2025',
-      title: 'Sustainable Ferry Design: Solar Panel and Hydrokinetic Turbine Integration for Enhanced Energy Efficiency',
+      title: 'WFSA 2025 poster',
       authors: 'Md Abdul Kader, Kawser Muhammad Jidan',
       conference: 'WFSA 2025 - World Ferry Safety Association',
       abstract: 'This research presents a comprehensive approach to ferry safety through renewable energy integration, focusing on solar panel systems and hydrokinetic turbine technology. The study demonstrates how combining these sustainable energy sources can significantly improve ferry operational efficiency while maintaining enhanced safety standards and reducing environmental impact.',
