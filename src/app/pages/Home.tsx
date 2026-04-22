@@ -443,7 +443,7 @@ const Home = () => {
                 opacity: currentSlide === index ? 1 : 0,
                 scale: currentSlide === index ? 1 : 1.1,
               }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 0.8 }}
               className="absolute inset-0"
             >
               <ImageWithFallback
