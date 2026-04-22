@@ -224,14 +224,14 @@ const Home = () => {
                 <Link to="/robosub-2026" className="block w-2/5">
                   <motion.div
                     whileHover={{
-                      scale: 1.05,
+                      scale: 0.9,
                       boxShadow: "0 0 30px rgba(189, 12, 13, 0.8)",
                     }}
                     whileTap={{ scale: 0.95 }}
                     className="bg-gradient-to-r from-[#BD0C0D] to-red-700 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg text-center transition-all duration-300"
                     style={{ fontFamily: "'Sequel Sans', sans-serif" }}
                   >
-                    Explore
+                    Explore RoboSub 2026
                   </motion.div>
                 </Link>
               </motion.div>
