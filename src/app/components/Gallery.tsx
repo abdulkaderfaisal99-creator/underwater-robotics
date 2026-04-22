@@ -6,6 +6,7 @@ import { useState } from "react";
 
 import gallery1 from "../../assets/gallery.png"; 
 import gallery2 from "../../assets/gallery-cameradetection.jpeg"; 
+import gallery3 from "../../assets/lasercuttingoperation.jpeg"; 
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -21,11 +22,11 @@ const Gallery = () => {
     },
     {
       url: gallery2,
-      alt: "Camera detection 2-Real time vision testing",
+      alt: "Camera detection -Real time vision testing",
     },
     {
-      url: "https://images.unsplash.com/photo-1553408226-42ecf81a214c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaXJjdWl0JTIwYm9hcmQlMjBlbGVjdHJvbmljc3xlbnwxfHx8fDE3NjkyNjQ1Njh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Circuit Board Electronics",
+      url: gallery3,
+      alt: "Laser cutting operation.jpeg",
     },
     {
       url: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2JvdCUyMG1lY2hhbmljYWwlMjBlbmdpbmVlcmluZ3xlbnwxfHx8fDE3NjkyNjQ1Njh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
