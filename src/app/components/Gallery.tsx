@@ -98,195 +98,30 @@ const Gallery = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
-          {/* Zig-Zag (Brick) Grid Pattern */}
-          <div className="max-w-7xl mx-auto">
-            {/* Row 1 - 3 items */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
-              {images.slice(0, 3).map((image, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.05 }}
-                  whileHover={{ scale: 1.05, zIndex: 10 }}
-                  className={`relative overflow-hidden rounded-lg shadow-lg group cursor-pointer ${
-                    index === 2 ? "col-span-2 md:col-span-1" : ""
-                  }`}
-                  onClick={() => openImage(index)}
-                  style={{ height: "280px" }}
-                >
-                  <img
-                    src={image.url}
-                    alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <p className="text-white p-4 text-sm">{image.alt}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Row 2 - 2 items (offset) */}
-            <div className="grid grid-cols-2 gap-4 mb-4 md:px-32">
-              {images.slice(3, 5).map((image, index) => (
-                <motion.div
-                  key={index + 3}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: (index + 3) * 0.05 }}
-                  whileHover={{ scale: 1.05, zIndex: 10 }}
-                  className="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer"
-                  onClick={() => openImage(index + 3)}
-                  style={{ height: "280px" }}
-                >
-                  <ImageWithFallback
-                    src={image.url}
-                    alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <p className="text-white p-4 text-sm">{image.alt}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Row 3 - 3 items */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
-              {images.slice(5, 8).map((image, index) => (
-                <motion.div
-                  key={index + 5}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: (index + 5) * 0.05 }}
-                  whileHover={{ scale: 1.05, zIndex: 10 }}
-                  className={`relative overflow-hidden rounded-lg shadow-lg group cursor-pointer ${
-                    index === 2 ? "col-span-2 md:col-span-1" : ""
-                  }`}
-                  onClick={() => openImage(index + 5)}
-                  style={{ height: "280px" }}
-                >
-                  <ImageWithFallback
-                    src={image.url}
-                    alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <p className="text-white p-4 text-sm">{image.alt}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Row 4 - 2 items (offset) */}
-            <div className="grid grid-cols-2 gap-4 mb-4 md:px-32">
-              {images.slice(8, 10).map((image, index) => (
-                <motion.div
-                  key={index + 8}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: (index + 8) * 0.05 }}
-                  whileHover={{ scale: 1.05, zIndex: 10 }}
-                  className="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer"
-                  onClick={() => openImage(index + 8)}
-                  style={{ height: "280px" }}
-                >
-                  <ImageWithFallback
-                    src={image.url}
-                    alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <p className="text-white p-4 text-sm">{image.alt}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Row 5 - 3 items */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
-              {images.slice(10, 13).map((image, index) => (
-                <motion.div
-                  key={index + 10}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: (index + 10) * 0.05 }}
-                  whileHover={{ scale: 1.05, zIndex: 10 }}
-                  className={`relative overflow-hidden rounded-lg shadow-lg group cursor-pointer ${
-                    index === 2 ? "col-span-2 md:col-span-1" : ""
-                  }`}
-                  onClick={() => openImage(index + 10)}
-                  style={{ height: "280px" }}
-                >
-                  <ImageWithFallback
-                    src={image.url}
-                    alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <p className="text-white p-4 text-sm">{image.alt}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Row 6 - 2 items (offset) */}
-            <div className="grid grid-cols-2 gap-4 mb-4 md:px-32">
-              {images.slice(13, 15).map((image, index) => (
-                <motion.div
-                  key={index + 13}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: (index + 13) * 0.05 }}
-                  whileHover={{ scale: 1.05, zIndex: 10 }}
-                  className="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer"
-                  onClick={() => openImage(index + 13)}
-                  style={{ height: "280px" }}
-                >
-                  <ImageWithFallback
-                    src={image.url}
-                    alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <p className="text-white p-4 text-sm">{image.alt}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Row 7 - 4 items (remaining) */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {images.slice(15, 19).map((image, index) => (
-                <motion.div
-                  key={index + 15}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: (index + 15) * 0.05 }}
-                  whileHover={{ scale: 1.05, zIndex: 10 }}
-                  className="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer"
-                  onClick={() => openImage(index + 15)}
-                  style={{ height: "280px" }}
-                >
-                  <ImageWithFallback
-                    src={image.url}
-                    alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <p className="text-white p-4 text-sm">{image.alt}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+          {/* Dynamic Grid: always renders all items */}
+          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {images.map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                whileHover={{ scale: 1.03, zIndex: 10 }}
+                className="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer"
+                onClick={() => openImage(index)}
+                style={{ height: "280px" }}
+              >
+                <ImageWithFallback
+                  src={image.url}
+                  alt={image.alt}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <p className="text-white p-4 text-sm">{image.alt}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
 
