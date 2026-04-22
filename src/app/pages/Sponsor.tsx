@@ -90,10 +90,10 @@ const Sponsor = () => {
                 collaboration, testing facilities, or financial sponsorship,
                 please feel free to reach out to us at{" "}
                 <a
-                  href="mailto:blackpearl.auv@buet.ac.bd"
+                  href="mailto:admin@teamblackpearl.com"
                   className="text-red-600 font-semibold hover:text-red-700 underline transition-colors"
                 >
-                  blackpearl.auv@buet.ac.bd
+                  admin@teamblackpearl.com
                 </a>
               </p>
 
