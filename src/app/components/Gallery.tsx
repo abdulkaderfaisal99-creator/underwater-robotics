@@ -23,7 +23,7 @@ const Gallery = () => {
     },
     {
       url: gallery2,
-      alt: "Camera detection -Real time vision testing",
+      alt: "Camera detection Real time vision testing",
     },
     {
       url: gallery3,
