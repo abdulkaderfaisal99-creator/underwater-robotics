@@ -5,7 +5,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 import gallery1 from "../../assets/gallery.png"; 
-import gallery2 from "../../assets/Camera detection 2-Real time vision testing.png"; 
+import gallery2 from "../../assets/gallery-cameradetection.jpeg"; 
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
