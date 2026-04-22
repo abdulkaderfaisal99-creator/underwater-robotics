@@ -486,21 +486,25 @@ const Home = () => {
                 </motion.h2>
 
                 {/* Learn More Button */}
-                <motion.a
-                  key={`button-${currentSlide}`}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.8 }}
-                  href={carouselImages[currentSlide].link}
-                  whileHover={{
-                    scale: 1.05,
-                    boxShadow: "0 0 30px rgba(239, 68, 68, 0.8)",
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-full text-base font-semibold shadow-lg transition-all duration-300 mb-6"
+                <Link
+                  to={carouselImages[currentSlide].link}
+                  className="inline-block mb-6"
                 >
-                  Dive-in
-                </motion.a>
+                  <motion.div
+                    key={`button-${currentSlide}`}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.8 }}
+                    whileHover={{
+                      scale: 1.05,
+                      boxShadow: "0 0 30px rgba(239, 68, 68, 0.8)",
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-full text-base font-semibold shadow-lg transition-all duration-300"
+                  >
+                    Dive-in
+                  </motion.div>
+                </Link>
 
                 {/* Dots Indicator */}
                 <div className="flex space-x-3">
