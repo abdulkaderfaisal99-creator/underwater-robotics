@@ -8,6 +8,7 @@ import {
   Plus,
   Minus,
 } from "lucide-react";
+import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import Footer from "../components/Footer";
 
@@ -220,18 +221,19 @@ const Home = () => {
                 transition={{ delay: 0.9, duration: 0.8 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
-                <motion.a
-                  href="/robosub-2026"
-                  whileHover={{
-                    scale: 1.05,
-                    boxShadow: "0 0 30px rgba(189, 12, 13, 0.8)",
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-gradient-to-r from-[#BD0C0D] to-red-700 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg block w-2/5 text-center transition-all duration-300"
-                  style={{ fontFamily: "'Sequel Sans', sans-serif" }}
-                >
-                  Explore
-                </motion.a>
+                <Link to="/robosub-2026" className="block w-2/5">
+                  <motion.div
+                    whileHover={{
+                      scale: 1.05,
+                      boxShadow: "0 0 30px rgba(189, 12, 13, 0.8)",
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-gradient-to-r from-[#BD0C0D] to-red-700 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg text-center transition-all duration-300"
+                    style={{ fontFamily: "'Sequel Sans', sans-serif" }}
+                  >
+                    Explore
+                  </motion.div>
+                </Link>
               </motion.div>
             </div>
           </div>
