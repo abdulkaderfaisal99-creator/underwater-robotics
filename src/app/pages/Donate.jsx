@@ -24,11 +24,9 @@ const Donate = () => {
       <div className="bg-white shadow-2xl rounded-2xl p-6 w-full max-w-md">
 
         <h2 className="text-2xl font-bold text-center text-blue-950 mb-4">
-          Donation Details
+          Sonali Bank Details (Current Account)
         </h2>
 
-        <InfoRow label="Bank Name" value="Sonali Bank" />
-        <InfoRow label="Account Type" value="Current Account" />
         <InfoRow label="Account Name" value="TEAM BLACK PEARL" />
         <InfoRow label="Account Number" value="4404002001132" />
         <InfoRow label="Routing Number" value="200270522" />
@@ -36,8 +34,7 @@ const Donate = () => {
 
         <button
           onClick={() =>
-            copyToClipboard(`Bank Name: Sonali Bank
-Account Type: Current Account
+            copyToClipboard(`
 Account Name: TEAM BLACK PEARL
 Account Number: 4404002001132
 Routing Number: 200270522
