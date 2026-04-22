@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Heart, Handshake, Mail, Users, Camera } from "lucide-react";
+import { Link } from "react-router";
 import Footer from "../components/Footer";
 import buet90Logo from "../../assets/eb4b029465de9a4da815c7e7f801868bd8b5d9ef.png";
 import albumImg1 from "../../assets/4e2900d28fd2aad54a10ae7ebc3c636b1541933a.png";
@@ -167,15 +168,15 @@ const Sponsor = () => {
                 <p className="text-gray-700 mb-4 max-w-xs">
                   Support our mission with your generous contribution
                 </p>
-                <motion.a
-                  href="/donate"
-                  target="_blank"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
-                >
-                  Click Here
-                </motion.a>
+                <Link to="/donate">
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                  >
+                    Click Here
+                  </motion.div>
+                </Link>
               </div>
             </motion.div>
 
