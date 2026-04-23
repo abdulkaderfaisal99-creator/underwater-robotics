@@ -51,8 +51,7 @@ const Navbar = () => {
             {/* About Dropdown */}
             <NavLink to="/papers">Papers</NavLink>
 
-            <NavLink to="/about">About Us</NavLink>
-            <NavLink to="/sponsor">Sponsor</NavLink>
+            
 
             {/* RoboSub Dropdown */}
             <div
@@ -103,10 +102,10 @@ const Navbar = () => {
                     className="absolute top-full left-0 mt-2 bg-blue-900 rounded-lg shadow-2xl overflow-hidden min-w-[200px] border border-red-500/30"
                   >
                     <Link
-                      to="/wfsa-2024"
+                      to="/wfsa-2026"
                       className="block px-4 py-3 text-white hover:bg-red-600 transition-colors"
                     >
-                      WFSA 2024
+                      WFSA 2026
                     </Link>
                     <Link
                       to="/wfsa-2025"
@@ -115,16 +114,21 @@ const Navbar = () => {
                       WFSA 2025
                     </Link>
                     <Link
-                      to="/wfsa-2026"
+                      to="/wfsa-2024"
                       className="block px-4 py-3 text-white hover:bg-red-600 transition-colors"
                     >
-                      WFSA 2026
+                      WFSA 2024
                     </Link>
+                    
+                    
                   </motion.div>
                 )}
               </AnimatePresence>
             </div>
 
+            
+            <NavLink to="/sponsor">Sponsor</NavLink>
+            <NavLink to="/about">About Us</NavLink>
             <NavLink to="/contact">Contact Us</NavLink>
           </div>
 
@@ -185,12 +189,7 @@ const Navbar = () => {
                 >
                   Home
                 </MobileNavLink>
-                <MobileNavLink
-                  to="/about"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  About Us
-                </MobileNavLink>
+                
 
                 {/* Mobile About Dropdown */}
                 {/* <div className="pl-4">
@@ -215,12 +214,7 @@ const Navbar = () => {
                   Papers
                 </MobileNavLink>
 
-                <MobileNavLink
-                  to="/sponsor"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Sponsor
-                </MobileNavLink>
+                
 
                 {/* Mobile RoboSub Dropdown */}
                 <div className="pl-4">
@@ -238,11 +232,11 @@ const Navbar = () => {
                 <div className="pl-4">
                   <p className="text-sm text-gray-400 mb-2">WFSA</p>
                   <Link
-                    to="/wfsa-2024"
+                    to="/wfsa-2026"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block py-2 text-white hover:text-red-400"
                   >
-                    WFSA 2024
+                    WFSA 2026
                   </Link>
                   <Link
                     to="/wfsa-2025"
@@ -252,13 +246,29 @@ const Navbar = () => {
                     WFSA 2025
                   </Link>
                   <Link
-                    to="/wfsa-2026"
+                    to="/wfsa-2024"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block py-2 text-white hover:text-red-400"
                   >
-                    WFSA 2026
+                    WFSA 2024
                   </Link>
+                  
+                  
                 </div>
+
+                <MobileNavLink
+                  to="/sponsor"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Sponsor
+                </MobileNavLink>
+
+                <MobileNavLink
+                  to="/about"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  About Us
+                </MobileNavLink>
 
                 <MobileNavLink
                   to="/contact"
