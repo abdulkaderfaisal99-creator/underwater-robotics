@@ -23,7 +23,7 @@ const ContactUs = () => {
       title: 'Phone',
       value: '+8801732-046270',
       value2: '02 223363605',
-      link: 'tel:+8801732-046270',
+      link: 'tel:+8801732046270',
       link2: 'tel:02223363605',
     },
     {
