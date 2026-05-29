@@ -68,7 +68,7 @@ const ContactUs = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-blue-200"
           >
-            We'd love to hear from you
+            We'd love to hear from you !!
           </motion.p>
         </div>
 
