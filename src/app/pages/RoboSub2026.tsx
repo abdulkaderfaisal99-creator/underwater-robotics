@@ -148,7 +148,7 @@ const RoboSub2026 = () => {
             >
               <p className="text-blue-900 text-lg md:text-xl leading-relaxed mb-6">
                 Our cutting-edge autonomous underwater vehicle (AUV) represents
-                the culmination of months of intensive design, engineering, and
+                the culmination of months of intensive engineering, and
                 innovation. Featuring advanced sensor arrays, modular component
                 integration, and state-of-the-art propulsion systems.
               </p>
