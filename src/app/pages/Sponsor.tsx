@@ -305,6 +305,69 @@ const Sponsor = () => {
           </motion.div>
         </div>
       </section>
+      
+      {/* Lobdhi Section */}
+      <section className="py-20 bg-gradient-to-b from-blue-50 to-blue-100">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-6xl mx-auto"
+          >
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Left Side - Logo */}
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="flex justify-center"
+              >
+                <img
+                  src={buet90Logo}
+                  alt="BUET Batch 90 Logo"
+                  className="w-full max-w-md h-auto"
+                />
+              </motion.div>
+
+              {/* Right Side - Text Content */}
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="text-center md:text-left"
+              >
+                <h2 className="text-4xl md:text-5xl mb-6 text-blue-950">
+                  Special Thanks to{" "}
+                  <span className="text-red-600">BUET 90 Batch</span>
+                </h2>
+                <p className="text-lg md:text-xl text-blue-800 leading-relaxed mb-8">
+                  We are incredibly grateful to the{" "}
+                  <strong>BUET Alumni Association</strong> for their unwavering
+                  support and guidance throughout our journey. Their
+                  contributions have been instrumental in helping us acquire
+                  essential equipment, participate in international
+                  competitions, and develop innovative underwater robotics
+                  solutions. The Alumni Association's commitment to fostering
+                  the next generation of engineers has made a profound impact on
+                  our team's success and growth.
+                </p>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="inline-flex items-center gap-3 bg-red-600 text-white px-8 py-4 rounded-full shadow-xl"
+                >
+                  <Users className="w-6 h-6" />
+                  <span className="text-lg font-semibold">
+                    Proud Alumni Partners
+                  </span>
+                </motion.div>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+
 
       {/* Album Section */}
       <section className="py-20 bg-white">
