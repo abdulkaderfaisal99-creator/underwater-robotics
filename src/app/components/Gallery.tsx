@@ -11,6 +11,8 @@ import gallery4 from "../../assets/Final assmebly.jpeg";
 import gallery5 from "../../assets/Plate cutting-3.jpeg";
 import gallery6 from "../../assets/water testing.jpg";
 import gallery7 from "../../assets/Enclosure.jpeg";
+import gallery8 from "../../assets/CFD torpedo.jpg";
+import gallery9 from "../../assets/CFD structure.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -47,6 +49,14 @@ const Gallery = () => {
     {
       url: gallery7,
       alt: "Enclosure assembly",
+    },
+    {
+      url: gallery8,
+      alt: "CFD analysis of the torpedo",
+    },
+    {
+      url: gallery9,
+      alt: "CFD analysis of the structure",
     },
   ];
 
