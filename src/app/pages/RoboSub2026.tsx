@@ -28,6 +28,8 @@ import gallery1 from "../../assets/Dubojan.jpg";
 
 // Gallery images
 import electricalImg from "../../assets/Electrical.png";
+import softwareImg from "../../assets/Software.png";
+
 
 const RoboSub2026 = () => {
   return (
@@ -318,10 +320,6 @@ const RoboSub2026 = () => {
                  src={electricalImg}
                  alt="Electrical Systems"
                  className="w-full h-[400px] object-cover"
-               
-                 // src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2FsJTIwY2lyY3VpdCUyMGJvYXJkJTIwcm9ib3RpY3N8ZW58MXx8fHwxNzcyMzM3NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  //alt="Electrical Systems"
-                  //className="w-full h-[400px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-950/40 to-transparent" />
               </div>
@@ -344,8 +342,8 @@ const RoboSub2026 = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-blue-600/20">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1625459201773-9b2386f53ca2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwY29kZSUyMHByb2dyYW1taW5nfGVufDF8fHx8MTc3MjMzNzcyNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Software Development"
+                  src={softwareImg}
+                  alt="Software Systems"
                   className="w-full h-[400px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-950/40 to-transparent" />
