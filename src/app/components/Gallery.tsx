@@ -5,7 +5,8 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 import gallery1 from "../../assets/gallery.png"; 
-import gallery2 from "../../assets/gallery-cameradetection.jpeg"; 
+import gallery2 from "../../assets/gallery-cameradetection.jpeg";
+import gallery3 from "../../assets/laser.jpeg";  
 //import gallery3 from "../../assets/lasercuttingoperation.jpeg"; 
 
 const Gallery = () => {
@@ -23,6 +24,10 @@ const Gallery = () => {
     {
       url: gallery2,
       alt: "Camera detection -Real time vision testing",
+    },
+    {
+      url: gallery3,
+      alt: "Laser cutting operation",
     },
     //{
     //  url: gallery3,
