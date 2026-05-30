@@ -171,13 +171,14 @@ const RoboSub2026 = () => {
 
       <section className="relative h-screen overflow-hidden">
         {/* YouTube Video Background */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 overflow-hidden">
           <iframe
-            className="absolute top-1/2 left-1/2 w-[300%] h-[400%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-            src="https://www.youtube.com/embed/Ip7dNVe2cLY?autoplay=1&mute=1&loop=1&playlist=Ip7dNVe2cLY&controls=0&showinfo=0&rel=0&modestbranding=1"
+            className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            src="https://www.youtube.com/embed/Ip7dNVe2cLY?autoplay=1&mute=1&loop=1&playlist=Ip7dNVe2cLY&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
             title="RoboSub 2026 Team Video"
             allow="autoplay; encrypted-media"
             frameBorder="0"
+            allowFullScreen
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-blue-950/60 to-transparent" />
         </div>
