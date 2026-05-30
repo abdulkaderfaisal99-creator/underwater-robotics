@@ -377,7 +377,7 @@ const AboutUs = () => {
               >
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-red-600/20">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1754297813553-43eb3a9f65a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bmRlcndhdGVyJTIwcm9ib3RpY3MlMjBzdWJtYXJpbmUlMjBjb21wZXRpdGlvbnxlbnwxfHx8fDE3NzMyNTUwODh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    src={topfigure}
                     alt="RoboSub 2026 Competition"
                     className="w-full h-[400px] object-cover"
                   />
