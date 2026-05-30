@@ -122,7 +122,7 @@ const AboutUs = () => {
               >
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                   Team Black Pearl from Bangladesh University of Engineering and
-                  Technology (BUET) is team mainly formed by students of the
+                  Technology (BUET) is a team mainly formed by students of the
                   Naval Architecture & Marine Engineering Department, working on
                   surface and underwater vehicles. With previous experience
                   competing on national and international stages, we are
