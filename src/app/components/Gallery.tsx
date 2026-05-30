@@ -8,6 +8,7 @@ import gallery1 from "../../assets/gallery.png";
 import gallery2 from "../../assets/gallery-cameradetection.jpeg";
 import gallery3 from "../../assets/laser.jpeg";  
 import gallery4 from "../../assets/Final assmebly.jpeg";
+import gallery5 from "../../assets/Plate cutting-3.jpeg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -33,11 +34,10 @@ const Gallery = () => {
       url: gallery4,
       alt: "Final assembly of the vehicle",
     },
-    //{
-    //  url: gallery3,
-    //  alt: "Laser cutting operation.jpeg",
-    //},
-    
+    {
+      url: gallery5,
+      alt: "Aluminum cutting operation",
+    },
   ];
 
   const openImage = (index: number) => {
