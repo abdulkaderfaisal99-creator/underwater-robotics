@@ -15,11 +15,11 @@ const Papers = () => {
       year: '2026',
       title: 'Robosub 2026 Technical Documents',
       authors: 'Team Black Pearl',
-      conference: 'RoboSub 2024 International Competition',
+      conference: 'RoboSub 2026 International Competition',
       abstract: 'Team Black Pearl develops an underwater autonomous vehicle named “Dubojan” for Robosub 2026. The focus of our team is to develop a new lightweight AUV with the ability to perform all the tasks and also leave some room for future modification also. The work is divided into four sub teams: Mechanical and Design Team, Electronics Team, Software Team, Media and Outreach Team. Our focus is to gather experience and to do as many tasks as possible.',
       pdfUrl: 'https://drive.google.com/file/d/1NwOsID6VA1giFZwqop6BM5QIDm1zQESr/view?usp=drive_link',
       //downloads: 342,
-      category: 'Navigation',
+      category: 'Underwater Robotics Competition',
     },
     {
       year: '2026',
@@ -29,7 +29,7 @@ const Papers = () => {
       abstract: 'The Niger Drift is a modern CNG-powered ferry that provides a practical and eco-friendly transportation solution along the Niger River. Designed to operate on the Lokoja–Onitsha route, the vessel carries 200 passengers along with their personal belongings and market cargo, directly supporting local economies and strengthening community connectivity. In response to rising fuel prices following the removal of fuel subsidies in 2023 and in line with Nigeria’s Presidential Initiative on Compressed Natural Gas (CNG), the ferry adopts CNG propulsion as a cleaner and more cost-effective alternative to conventional diesel engines. An additional battery system provides emergency power for critical onboard components when required. To further enhance operational sustainability, the vessel is equipped with auxiliary energy sources, including solar panels and a hydrokinetic turbine. Designed for shallow-water operation under strict draft limitations, the hull form and overall layout are optimized to ensure safety, affordability, and stability, making the Niger Drift a sustainable and innovative solution for inland waterway transportation in Nigeria.',
       pdfUrl: 'https://drive.google.com/file/d/1ukn8SdtAdqSsJpvDEKC89e1XbscyTndu/view?usp=drive_link',
       //downloads: 428,
-      category: 'Ferry Design',
+      category: 'Ferry Design Competition',
     },
     {
       year: '2025',
@@ -39,7 +39,7 @@ const Papers = () => {
       abstract: 'Naija Spirit is an electric ferry designed to enhance transportation on the Lagos inland waterway, a vital route for connecting communities, supporting daily commutes, and promoting economic growth. Leveraging Lagos’s abundant solar energy potential while addressing challenges such as limited power supply, the vessel incorporates energy-efficient systems to ensure reliable operation. Its primary propulsion system is battery-powered, while a hydrogen fuel cell serves as an emergency propulsion source. To further improve sustainability, Naija Spirit is equipped with auxiliary power systems, including perovskite solar cells, a hydrokinetic turbine, and a power regeneration system integrated into the propeller. Designed for shallow-water operations, the ferry is optimized for stability while meeting key constraints such as water depth and bridge clearance. Operating between Ikorodu and CMS, it facilitates seamless multimodal transportation and accommodates up to 200 passengers. Through a comprehensive design spiral process, Naija Spirit achieves an optimal balance of safety, affordability, and aesthetics, providing a sustainable and innovative solution for urban waterway transportation in Lagos.',
       pdfUrl: 'https://drive.google.com/file/d/1vJYpOXiThHav_f1Y_2cciaG5DntnWC6C/view?usp=drive_link',
       //downloads: 98,
-      category: 'Ferry Design',
+      category: 'Ferry Design Competition',
     },
     {
       year: '2024',
@@ -49,7 +49,7 @@ const Papers = () => {
       abstract: 'Black Pearl, an electric powered Ro-Pax ferry, is designed to operate in Nigeria on the Niger river starting its origin at Onitsha with two other stoppages at Ndoni and Idah. This ferry is designed to carry 200 passengers and 20 (four-wheeled) vehicles',
       pdfUrl: 'https://drive.google.com/file/d/1MRw9XPJsqI6Iv0jSjODnP4DS5q4WQvq8/view?usp=sharing',
       //downloads: 156,
-      category: 'Ferry Design',
+      category: 'Ferry Design COmpetition',
     },
     {
       year: '2023',
@@ -59,7 +59,7 @@ const Papers = () => {
       abstract: 'Green Falcon Express, an electric powered 100 passenger express ferry, is designed to operate in Manila, Philippines on the Pasig River between Guadalupe and Lawton.',
       pdfUrl: 'https://drive.google.com/file/d/1N3PqQgNCw0UQTPUfDf_1K7qd4p0z4rfJ/view?usp=drive_link',
       //downloads: 189,
-      category: 'Ferry Design',
+      category: 'Ferry Design Competition',
     },
     
   ];
