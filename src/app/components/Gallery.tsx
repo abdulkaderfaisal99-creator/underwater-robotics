@@ -9,6 +9,8 @@ import gallery2 from "../../assets/gallery-cameradetection.jpeg";
 import gallery3 from "../../assets/laser.jpeg";  
 import gallery4 from "../../assets/Final assmebly.jpeg";
 import gallery5 from "../../assets/Plate cutting-3.jpeg";
+import gallery6 from "../../assets/water testing.jpg";
+import gallery7 from "../../assets/Enclosure.jpeg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -37,6 +39,14 @@ const Gallery = () => {
     {
       url: gallery5,
       alt: "Aluminum cutting operation",
+    },
+    {
+      url: gallery6,
+      alt: "water testing",
+    },
+    {
+      url: gallery7,
+      alt: "Enclosure assembly",
     },
   ];
 
