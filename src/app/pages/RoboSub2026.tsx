@@ -24,7 +24,7 @@ import coordinator from "../../assets/3983d070a611f4e52c6e6adc35af9d3bbb06e7e3.p
 import robosubLogo from "../../assets/cb61073f0ec258356897d0b660b0390f30abdf64.png";
 
 // RoboSub vessel design
-import vesselDesign from "../../assets/Dubojna.jpg";
+import gallery1 from "../../assets/Dubojna.jpg";
 
 const RoboSub2026 = () => {
   return (
