@@ -13,6 +13,7 @@ import gallery6 from "../../assets/water testing.jpg";
 import gallery7 from "../../assets/Enclosure.jpeg";
 import gallery8 from "../../assets/CFD torpedo.jpg";
 import gallery9 from "../../assets/CFD structure.jpg";
+import gallery10 from "../../assets/Dubojan.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -20,7 +21,7 @@ const Gallery = () => {
   const images = [
     {
       url: gallery1,
-      alt: "Underwater rover",
+      alt: "Underwater rover (Dubojan)",
     },
     {
       url: "https://lh3.googleusercontent.com/d/1KR3vcum6JnYt_SjHPzcqVTzuYy52xiAk",
