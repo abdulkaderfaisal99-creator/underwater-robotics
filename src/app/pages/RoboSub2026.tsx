@@ -223,11 +223,7 @@ const RoboSub2026 = () => {
                   transition={{ delay: 0.4 }}
                   className="text-sm md:text-base text-blue-200 mb-6 leading-relaxed"
                 >
-                  This video showcases our team's hard work, technical
-                  expertise, and passion for underwater robotics. Every
-                  challenge we face brings us closer to our goal of competing at
-                  the highest level in RoboSub 2026.
-                </motion.p>
+                
 
                 <motion.a
                   href="https://www.youtube.com/watch?v=Ip7dNVe2cLY"
