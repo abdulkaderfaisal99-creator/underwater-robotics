@@ -229,7 +229,7 @@ const RoboSub2026 = () => {
                 </motion.p>
 
                 <motion.a
-                  href="https://www.youtube.com/watch?v=Ip7dNVe2cLY"
+                  href="https://www.youtube.com/watch?v=ITj-qZL8_3k"
                   target="_blank"
                   rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 20 }}
@@ -442,7 +442,7 @@ const RoboSub2026 = () => {
 
             {/* Image Right */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}s
+              initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
