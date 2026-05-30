@@ -149,7 +149,7 @@ const Papers = () => {
           >
             <FileText className="w-16 h-16 md:w-20 md:h-20 text-white mx-auto mb-6" />
             <h1 className="text-4xl md:text-6xl text-white mb-4 font-bold">
-              Research <span className="text-yellow-300">Papers</span>
+              Technical <span className="text-yellow-300">Documents</span>
             </h1>
             <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto">
               Explore our published research and technical documentation from international competitions and academic conferences
