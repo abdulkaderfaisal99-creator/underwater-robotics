@@ -32,7 +32,7 @@ const Papers = () => {
     },
     {
       year: '2024',
-      title: 'Advanced Ferry Design and Safety - Technical Poster',
+      title: 'WFSA 2024 poster - Technical Poster',
       authors: 'Md Abdul Kader Rassel and Team',
       conference: 'WFSA 2024 - World Ferry Safety Association',
       abstract: 'This technical poster presents innovative approaches to ferry design with enhanced safety features and advanced engineering solutions. The work demonstrates comprehensive research in ferry safety systems and modern design methodologies.',
