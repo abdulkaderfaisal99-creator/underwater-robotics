@@ -173,7 +173,7 @@ const RoboSub2026 = () => {
         {/* YouTube Video Background */}
         <div className="absolute inset-0">
           <iframe
-            className="absolute top-1/2 left-1/2 w-[300%] h-[300%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            className="absolute top-1/2 left-1/2 w-[300%] h-[400%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
             src="https://www.youtube.com/embed/Ip7dNVe2cLY?autoplay=1&mute=1&loop=1&playlist=Ip7dNVe2cLY&controls=0&showinfo=0&rel=0&modestbranding=1"
             title="RoboSub 2026 Team Video"
             allow="autoplay; encrypted-media"
