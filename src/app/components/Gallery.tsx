@@ -4,7 +4,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
-import gallery1 from "../../assets/gallery.png"; 
+import gallery1 from "../../assets/Dubojan.jpg"; 
 import gallery2 from "../../assets/gallery-cameradetection.jpeg";
 import gallery3 from "../../assets/laser.jpeg";  
 import gallery4 from "../../assets/Final assmebly.jpeg";
@@ -13,7 +13,6 @@ import gallery6 from "../../assets/water testing.jpg";
 import gallery7 from "../../assets/Enclosure.jpeg";
 import gallery8 from "../../assets/CFD torpedo.jpg";
 import gallery9 from "../../assets/CFD structure.jpg";
-import gallery10 from "../../assets/Dubojan.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
