@@ -7,6 +7,7 @@ import buet90Logo from "../../assets/eb4b029465de9a4da815c7e7f801868bd8b5d9ef.pn
 import albumImg1 from "../../assets/4e2900d28fd2aad54a10ae7ebc3c636b1541933a.png";
 import albumImg2 from "../../assets/07d5f73c72932623edaf345f0e55006d9b2e66ee.png";
 import albumImg3 from "../../assets/058ce268c11cfd4bcc6cf8235d3d9a95a43f3e03.png";
+import lobdhilogo from "../../assets/Lobdhi Logo.png";
 
 
 
@@ -297,7 +298,7 @@ const Sponsor = () => {
                 >
                   <Users className="w-6 h-6" />
                   <span className="text-lg font-semibold">
-                    Proud Alumni Partners
+                    Our Proud Platinum Sponsor
                   </span>
                 </motion.div>
               </motion.div>
@@ -324,7 +325,7 @@ const Sponsor = () => {
                 className="flex justify-center"
               >
                 <img
-                  src={buet90Logo}
+                  src={lobdhilogo}
                   alt="BUET Batch 90 Logo"
                   className="w-full max-w-md h-auto"
                 />
@@ -339,18 +340,14 @@ const Sponsor = () => {
               >
                 <h2 className="text-4xl md:text-5xl mb-6 text-blue-950">
                   Special Thanks to{" "}
-                  <span className="text-red-600">BUET 90 Batch</span>
+                  <span className="text-red-600">Lobdhi</span>
                 </h2>
                 <p className="text-lg md:text-xl text-blue-800 leading-relaxed mb-8">
                   We are incredibly grateful to the{" "}
-                  <strong>BUET Alumni Association</strong> for their unwavering
-                  support and guidance throughout our journey. Their
-                  contributions have been instrumental in helping us acquire
-                  essential equipment, participate in international
-                  competitions, and develop innovative underwater robotics
-                  solutions. The Alumni Association's commitment to fostering
-                  the next generation of engineers has made a profound impact on
-                  our team's success and growth.
+                  <strong>Lobdhi</strong> for their invaluable support and mentorship. 
+                  Their contributions have significantly strengthened our ability to 
+                  develop innovative underwater robotics systems and showcase our work 
+                  on international stages.
                 </p>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
@@ -358,7 +355,7 @@ const Sponsor = () => {
                 >
                   <Users className="w-6 h-6" />
                   <span className="text-lg font-semibold">
-                    Proud Alumni Partners
+                    Our Proud Silver Sponsor
                   </span>
                 </motion.div>
               </motion.div>
