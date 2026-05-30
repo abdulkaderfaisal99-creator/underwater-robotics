@@ -26,6 +26,9 @@ import robosubLogo from "../../assets/cb61073f0ec258356897d0b660b0390f30abdf64.p
 // RoboSub vessel design
 import gallery1 from "../../assets/Dubojan.jpg";
 
+// Gallery images
+import electricalImg from "../../assets/Electrical.png";
+
 const RoboSub2026 = () => {
   return (
     <div className="min-h-screen -mt-20">
@@ -311,10 +314,14 @@ const RoboSub2026 = () => {
               className="relative"
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-red-600/20">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2FsJTIwY2lyY3VpdCUyMGJvYXJkJTIwcm9ib3RpY3N8ZW58MXx8fHwxNzcyMzM3NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Electrical Systems"
-                  className="w-full h-[400px] object-cover"
+                 <ImageWithFallback
+                 src={electricalImg}
+                 alt="Electrical Systems"
+                 className="w-full h-[400px] object-cover"
+               
+                 // src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2FsJTIwY2lyY3VpdCUyMGJvYXJkJTIwcm9ib3RpY3N8ZW58MXx8fHwxNzcyMzM3NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  //alt="Electrical Systems"
+                  //className="w-full h-[400px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-950/40 to-transparent" />
               </div>
