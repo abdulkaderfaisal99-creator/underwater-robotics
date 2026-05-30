@@ -229,7 +229,7 @@ const RoboSub2026 = () => {
                 </motion.p>
 
                 <motion.a
-                  href="https://www.youtube.com/watch?v=ITj-qZL8_3k"
+                  href="https://www.youtube.com/watch?v=Ip7dNVe2cLY"
                   target="_blank"
                   rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 20 }}
