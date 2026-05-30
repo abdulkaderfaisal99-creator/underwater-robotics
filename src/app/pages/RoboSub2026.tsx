@@ -29,6 +29,7 @@ import gallery1 from "../../assets/Dubojan.jpg";
 // Gallery images
 import electricalImg from "../../assets/Electrical.png";
 import softwareImg from "../../assets/Software.png";
+import MechanicalImg from "../../assets/Mechanical.png";
 
 
 const RoboSub2026 = () => {
@@ -449,8 +450,8 @@ const RoboSub2026 = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-green-600/20">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1769149068959-b11392164add?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMENBRCUyMGRlc2lnbiUyMGJsdWVwcmludHxlbnwxfHx8fDE3NzIzMzc3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Engineering Design"
+                  src={MechanicalImg}
+                  alt="Mechanical Systems"
                   className="w-full h-[400px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-950/40 to-transparent" />
